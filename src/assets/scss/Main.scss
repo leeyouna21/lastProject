@@ -1,0 +1,135 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: pretendard !important;
+  width: 100%;
+  height: 100%;
+}
+.photocontainer {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  overflow-x: hidden;
+  .themephoto {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .top_wrap {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+      .markbox {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        button{
+            border: 0;
+            outline: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+      }
+
+      .loginbox {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-right: 40px;
+        button{
+            font-family: pretendard !important; 
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .themebox {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    button{
+        border: none;
+        outline: none;
+        font-size: 40px;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 700;
+    }
+  }
+
+  .inputbox {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .inputbar {
+      font-family: pretendard !important;
+      width: 600px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+  }
+
+  .themeinfobox {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
+.maincontainer {
+  width: 100%;
+  height: 70%;
+  position: relative;
+  .recommand_wrap{
+    width: calc(100% - 40px);
+    height: 80%;
+    position: relative;
+    margin: 0 auto;
+    .recommand_1st{
+      // width: calc(100% - 40px);
+      height: 80%;
+      position: absolute;
+      // top: 10%;
+      left: 12%;
+      margin: 0 auto;
+      .recommand_1st_menu{
+        // top: 50%;
+        // left: 12%;
+        button{
+          top: 10%;
+          position: absolute;
+          left: 10%;
+          border: none;
+          outline: none;
+          font-size: 17px;
+          cursor: pointer;
+          font-weight: 700;
+          font-family: pretendard !important;
+        }
+        span{
+          position: absolute;
+          left: 25%;
+          font-family: pretendard !important;
+        }
+      }
+    }
+  }
+}

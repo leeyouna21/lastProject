@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from 'react';
+import Domestic from './Domestic';
+import International from './International';
 
 const Input = (props) => {
     return <input {...props} />;
 };
 
 const Travel = () => {
+    const [activeTab, setActiveTab] = useState('domestic');
+
+    const renderContent = () => {
+        if (activeTab === 'domestic') {
+            return <Domestic />;
+        } else if (activeTab === 'international') {
+            return <International />;
+        }
+    };
+
     const images = [
         "/image/Travel_1.png",
         "/image/Travel_2.png",
@@ -60,12 +72,24 @@ const Travel = () => {
                 <div className="Trv_container">
                     <div className="try_title">
                         <h4>여행지 추천</h4>
-                        <div className="when">
-                            <div className="in">국내</div>
-                            <div className="out">해외</div>
+                        <div className="navbar">
+                            <button
+                                className={activeTab === 'domestic' ? 'active' : ''}
+                                onClick={() => setActiveTab('domestic')}
+                            >
+                            국내
+                            </button>
+                            <button
+                                className={activeTab === 'international' ? 'active' : ''}
+                                onClick={() => setActiveTab('international')}
+                            >
+                            해외
+                            </button>
                         </div>
                     </div>
-                    
+                    <div className="content">
+                        {renderContent()}
+                    </div>
                 </div>
             </div>
         </div>

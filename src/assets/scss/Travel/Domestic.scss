@@ -1,0 +1,28 @@
+.title_wrap {
+    width: 100%;
+    height: 500px;
+    // background: #d9d9d9;
+    .container {
+        width: calc(100% - 60px);
+        height: 500px;
+        background: #ffe2e2;
+        margin: 0 auto;
+        .theme_title {
+            .choice {}
+        }
+        .box_wrap {
+            width: 20%;
+            height: auto;
+            border: 1px solid #d9d9d9;
+            border-radius: 5px;
+            .tre_title {
+                font-size: 15px;
+                cursor: pointer;
+                color: blue;
+                font-weight: 800;
+            }
+            .tre_location {}
+            .tre_desc {}
+        }
+    }
+}

@@ -3,8 +3,9 @@ import Main from "./components/Main/Main";
 import Login from "./components/Login/Login";
 import Travel from "./components/Travel/Travel";
 import Domestic from "./components/Travel/Domestic";
+import TravelItem from "./components/Travel/TravelItem";
 import International from "./components/Travel/International";
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';  
 
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Main" element={<Main />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Travel" element={<Travel />} />
+          <Route path="/TravelItem" element={<TravelItem />} />
           <Route path="/Domestic" element={<Domestic />} />
           <Route path="/International" element={<International />} />
         </Routes>

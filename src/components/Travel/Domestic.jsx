@@ -1,24 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react';
+import TravelItem from './TravelItem'; // Ensure correct path to the component
+import { themeTravelData, generalTravelData } from '../TravelData'; // Ensure correct path to the data file
 
-const domestic = () => {
-  return (
+
+
+const Domestic = () => {
+
+  const [category, setCategory] = useState('theme'); // Default category is 'theme'
+
+return (
     <div>
-        <div className="title_wrap">
-            <div className="container">
-                <div className="theme_title">
-                    <div className="choice"></div>
-                </div>
-                <div className="box_wrap">
-                    <div className="tre_title">단양</div>
-                    <div className="tre_location">경상북도</div>
-                    <div className="tre_desc">고바람의 흐름에 몸을 맡기며 눈 아래 펼쳐지는 단양의 풍경</div>
-                    <div className="tre_hash">#고수동굴 #도단삼봉 #사인암 #황정산_자연휴양림</div>
-                    <img src="" alt="" />
-                </div>
+    <div className="title_wrap">
+        <div className="container">
+        <div className="theme_title">
+            <div className="choice">
+            <button
+                className={category === 'theme' ? 'active' : ''}
+                onClick={() => setCategory('theme')}
+            >
+                테마여행
+            </button>
+            <button
+                className={category === 'general' ? 'active' : ''}
+                onClick={() => setCategory('general')}
+            >
+                무난히 다 가기 좋은 여행
+            </button>
             </div>
         </div>
+        <div className="box_wrap">
+            {category === 'theme' && themeTravelData.map((item, index) => (
+            <TravelItem
+                key={index}
+                title={item.title}
+                location={item.location}
+                desc={item.desc}
+                hashes={item.hashes}
+                imgSrc={item.imgSrc}
+                imgAlt={item.imgAlt}
+            />
+            ))}
+            {category === 'general' && generalTravelData.map((item, index) => (
+            <TravelItem
+                key={index}
+                title={item.title}
+                location={item.location}
+                desc={item.desc}
+                hashes={item.hashes}
+                imgSrc={item.imgSrc}
+                imgAlt={item.imgAlt}
+            />
+            ))}
+        </div>
+        </div>
     </div>
-  )
-}
+    </div>
+);
+};
 
-export default domestic
+export default Domestic;

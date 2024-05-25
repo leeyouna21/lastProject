@@ -1,9 +1,9 @@
 .title_wrap {
     width: 100%;
-    height: 500px;
+    height: auto;
     .container {
         width: calc(100% - 140px);
-        height: 500px;
+        height: auto;
         margin: 0 auto;
         .theme_title {
             .choice {
@@ -69,7 +69,7 @@
                 margin-left: 20px;
                 margin-bottom: 10px;
                 font-size: 14px;
-                white-space: nowrap;
+                // white-space: nowrap;
             }
             .tre_hash {
                 margin-left: 20px;

@@ -17,6 +17,8 @@ const Travel = () => {
         }
     };
 
+
+    // 15초마다 이미지 변경
     const images = [
         "/image/Travel_1.png",
         "/image/Travel_2.png",
@@ -29,7 +31,7 @@ const Travel = () => {
             setCurrentImageIndex((prevIndex) =>
                 prevIndex === images.length - 1 ? 0 : prevIndex + 1
             );
-        }, 15000); // 15초마다 이미지 변경
+        }, 15000); 
 
         return () => clearInterval(interval);
     }, [images.length]);

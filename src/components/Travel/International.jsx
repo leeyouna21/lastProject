@@ -1,13 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react';
+import TravelItem from './TravelItem';
+import { themeTravelData, generalTravelData } from '../InternationalData'; 
 
 const International = () => {
+
+  const [category, setCategory] = useState('theme'); 
+
+  
   return (
     <div>
-      <h2>해외 내용</h2>
-      <p>여기에 해외에 대한 내용을 작성합니다.</p>
-      {/* 더 많은 내용을 추가할 수 있습니다 */}
+    <div className="title_wrap">
+        <div className="container">
+        <div className="theme_title">
+            <div className="choice">
+            <button
+                className={category === 'theme' ? 'active' : ''}
+                onClick={() => setCategory('theme')}
+            >
+                테마여행
+            </button>
+            <button
+                className={category === 'general' ? 'active' : ''}
+                onClick={() => setCategory('general')}
+            >
+                무난히 다 가기 좋은 여행
+            </button>
+            </div>
+        </div>
+        <div className="box_wrap">
+            {category === 'theme' && themeTravelData.map((item, index) => (
+            <TravelItem
+                key={index}
+                title={item.title}
+                location={item.location}
+                desc={item.desc}
+                hashes={item.hashes}
+                imgSrc={item.imgSrc}
+                imgAlt={item.imgAlt}
+            />
+            ))}
+            {category === 'general' && generalTravelData.map((item, index) => (
+            <TravelItem
+                key={index}
+                title={item.title}
+                location={item.location}
+                desc={item.desc}
+                hashes={item.hashes}
+                imgSrc={item.imgSrc}
+                imgAlt={item.imgAlt}
+            />
+            ))}
+        </div>
+        </div>
     </div>
-  )
+    </div>
+);
 }
 
 export default International

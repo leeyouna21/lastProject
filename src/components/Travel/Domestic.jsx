@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import TravelItem from './TravelItem'; // Ensure correct path to the component
-import { themeTravelData, generalTravelData } from '../TravelData'; // Ensure correct path to the data file
+import TravelItem from './TravelItem';
+import { themeTravelData, generalTravelData } from '../TravelData'; 
 
 
 
 const Domestic = () => {
 
-  const [category, setCategory] = useState('theme'); // Default category is 'theme'
+  const [category, setCategory] = useState('theme'); 
 
 return (
     <div>

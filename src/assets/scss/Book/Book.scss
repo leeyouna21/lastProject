@@ -38,7 +38,7 @@
             .location_wrap {
                 margin-right: 35px;
                 width: calc(30.3333% - 20px);
-                height: 330px;
+                height: 285px;
                 border: 1px solid #d9d9d9;
                 border-radius: 5px;
                 padding: 10px;
@@ -69,8 +69,6 @@
                 margin-left: 20px;
                 margin-bottom: 10px;
                 font-size: 14px;
-                height: 80px;
-                // background: #000;
                 // white-space: nowrap;
             }
             .tre_hash {
@@ -95,21 +93,18 @@
                 }
             }
             .tre_img {
-                margin-left: 30%;
-                display: flex;
-                justify-content: center;
-                width: auto;
-                height: 100px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                border-radius: 10px;
-                // margin-top: 10px;
-                margin-bottom: 50px;
-                
+                // margin-left: 20px;
+                // width: 150px;
+                // height: 130px;
+                // background-repeat: no-repeat;
+                // // background-size: contain
+                // background-size: cover;
+                // border-radius: 20px;
+                // // margin-top: 10px;
             }
             .booking {
                 margin-left: 20px;
-                width: 355px;
+                width: 320px;
                 height: 40px;
                 border: 1px solid #e4e4e4;
                 border-radius: 5px;

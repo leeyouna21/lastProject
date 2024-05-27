@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Weather from '../MainPG/Weather';
+import Login from '../Login/Login';
+import Banner from '../Banner/Banner';
 
 const MainPg = () => {
   return (
@@ -43,7 +46,17 @@ const MainPg = () => {
                     </div>
                 </div>
             </div>
-            <div className="main_btm_container"></div>
+            <div className="main_btm_container">
+                <div className="btm_left">
+                    <Banner></Banner>
+                </div>
+                <div className="btm_right">
+                    <Login></Login>
+                    <div className="weather_wrap">
+                        <Weather></Weather>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )

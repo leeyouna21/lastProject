@@ -4,15 +4,16 @@
 }
 .main_wrap {
     width: 100%;
-    height: 1200px;
-    background: #cfcfcf;
+    height: auto;
+    // background: #cfcfcf;
+    // margin-bottom: 100px;
     .main_top_container {
-        // margin-top: 30px;
-        width: calc(100% - 400px);
+        width: calc(100% - 600px);
         margin: 0 auto;
-        background: #ffecec;
+        // background: #ffecec;
         height: 200px;
         .main_search {
+            padding-top: 100px;
             width: 100%;
             input {
                 width: 100%;
@@ -28,19 +29,119 @@
             }
             input::placeholder {
                 font-size: 15px;
-                color: #fff;
+                color: #888;
             }
         }
         .category_wrap {
+            margin-top: 20px;
             display: flex;
+            justify-content: center;
+            // justify-content: space-between;
             .icon {
+                margin: 0 40px;
                 .iconImg {
                     width: 50px;
                     height: 50px;
                     background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+                h4 {
+                    cursor: pointer;
+                    font-size: 15px;
+                    color: #666;
+                    text-align: center;
                 }
             }
         }
     }
-    .main_btm_container {}
+    .main_btm_container {
+        width: calc(100% - 80px);
+        margin: 0 auto;
+        // background: #cdcdcd;
+        height: 1000px;
+        margin-top: 100px;
+        display: flex;
+        .btm_left {
+            width: 64.5%;
+            height: auto;
+            // background: #c4c4c4;
+            margin-right: 1%;
+        }
+        .btm_right {
+            width: 35.5%;
+            height: auto;
+            // background: #e29f9f;
+            .login_wrap {
+                width: 100%;
+                height: auto;
+                border: 1px solid #e4e4e4;
+                border-radius: 20px;
+                margin-bottom: 10px;
+                span {
+                    // text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 30px;
+                    color: #999;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                .login_box {
+                    width: calc(100% - 80px);
+                    height: 60px;
+                    background: #17245A;
+                    border-radius: 14px;
+                    margin: 0 auto;
+                    h4 {
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        line-height: 3.5;
+                    }
+                }
+                .sub_wrap {
+                    width: calc(100% - 280px);
+                    margin: 0 auto;
+                    // background: #000;
+                    display: flex;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    justify-content: space-between;
+                    color: #999;
+                    font-weight: 700;
+                    position: relative;
+                    ::after{
+                        position:absolute;
+                        content:"";
+                        width: 2px;
+                        height:13px;
+                        background: #888;
+                        left:60px;
+                        bottom:4px;
+                        border-radius: 100px;
+                    }
+                    .sing {
+                        position: relative;
+                    }
+                    .sing::after {
+                        position: absolute;
+                        content: "";
+                        width: 2px;
+                        height: 13px;
+                        background: #888;
+                        left: 115px;
+                        bottom: 4px;
+                        border-radius: 100px;
+                    }
+                }
+            }
+            .weather_wrap {
+                width: 100%;
+                height: auto;
+                border: 1px solid #e4e4e4;
+                border-radius: 20px;
+            }
+        }
+    }
 }

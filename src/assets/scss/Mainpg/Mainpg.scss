@@ -7,6 +7,7 @@
     height: auto;
     // background: #cfcfcf;
     // margin-bottom: 100px;
+    background: #fff;
     .main_top_container {
         width: calc(100% - 600px);
         margin: 0 auto;
@@ -39,6 +40,8 @@
             // justify-content: space-between;
             .icon {
                 margin: 0 40px;
+                text-decoration: none;
+                transition: transform 0.3s ease; 
                 .iconImg {
                     width: 50px;
                     height: 50px;
@@ -51,6 +54,9 @@
                     color: #666;
                     text-align: center;
                 }
+            }
+            .icon:hover {
+                transform: translateY(-5px); /* 위로 5px 올라가도록 설정 */
             }
         }
     }

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Weather from '../MainPG/Weather';
 import Login from '../Login/Login';
 import Banner from '../Banner/Banner';
+import Travel from '../Travel/Travel';
+import { Link } from 'react-router-dom';
 
 const MainPg = () => {
   return (
@@ -20,10 +22,10 @@ const MainPg = () => {
                         <img className='iconImg' src="/image/health.png" alt="" />
                         <h4>건강</h4>
                     </div>
-                    <div className="icon">
-                        <img className='iconImg' src="/image/travel.png" alt="" />
+                    <Link to="/travel" className="icon">
+                        <img className="iconImg" src="/image/travel.png" alt="" />
                         <h4>여행</h4>
-                    </div>
+                    </Link>
                     <div className="icon">
                         <img className='iconImg' src="/image/hobby.png" alt="" />
                         <h4>취미</h4>

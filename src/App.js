@@ -7,6 +7,8 @@ import Domestic from "./components/Travel/Domestic";
 import TravelItem from "./components/Travel/TravelItem";
 import International from "./components/Travel/International";
 import Banner from "./components/Banner/Banner";
+import With from "./components/With/With";
+import Board from "./components/Board/Board";
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';  
 
 
@@ -27,6 +29,8 @@ function App() {
           <Route path="/Domestic" element={<Domestic />} />
           <Route path="/International" element={<International />} />
           <Route path="/Banner" element={<Banner />} />
+          <Route path="/With" element={<With />} />
+          <Route path="/Board" element={<Board />} />
         </Routes>
       </Router>
     </div>

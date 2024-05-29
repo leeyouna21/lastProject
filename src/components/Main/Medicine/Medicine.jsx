@@ -57,20 +57,30 @@ const Main = () => {
           <span>어떤 음식이 어디에 좋은지,<br /> 어떤 영양제를 먹을지 추천과 구매를 한번에.</span >
         </div>
       </div>
-      <div className="navbar">
-        <button 
-          className={activeTab === 'Food' ? 'active' : ''}
-          onClick={() => setActiveTab('Food')}
-        >
-          음식
-        </button>
-        <button 
-          className={activeTab === 'Medi' ? 'active' : ''}
-          onClick={() => setActiveTab('Medi')}
-        >
-          영양제
-        </button>
-      </div>
+      <div className="Trv_main">
+                <div className="Trv_container">
+                    <div className="try_title">
+                        <h4>식품 추천</h4>
+                        <div className="navbar">
+                            <button
+                                className={activeTab === 'domestic' ? 'active' : ''}
+                                onClick={() => setActiveTab('domestic')}
+                            >
+                            
+                            </button>
+                            <button
+                                className={activeTab === 'international' ? 'active' : ''}
+                                onClick={() => setActiveTab('international')}
+                            >
+                            해외
+                            </button>
+                        </div>
+                    </div>
+                    <div className="content">
+                        {renderContent()}
+                    </div>
+                </div>
+            </div>
       
       <div className="content">
         {renderContent()}

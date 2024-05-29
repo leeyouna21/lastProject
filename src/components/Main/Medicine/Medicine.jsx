@@ -63,16 +63,16 @@ const Main = () => {
                         <h4>식품 추천</h4>
                         <div className="navbar">
                             <button
-                                className={activeTab === 'domestic' ? 'active' : ''}
-                                onClick={() => setActiveTab('domestic')}
+                                className={activeTab === 'Medi' ? 'active' : ''}
+                                onClick={() => setActiveTab('Medi')}
                             >
-                            
+                            영양제
                             </button>
                             <button
-                                className={activeTab === 'international' ? 'active' : ''}
-                                onClick={() => setActiveTab('international')}
+                                className={activeTab === 'Food' ? 'active' : ''}
+                                onClick={() => setActiveTab('Food')}
                             >
-                            해외
+                            음식
                             </button>
                         </div>
                     </div>
@@ -82,9 +82,7 @@ const Main = () => {
                 </div>
             </div>
       
-      <div className="content">
-        {renderContent()}
-      </div>
+      
     </div>
   )
 }

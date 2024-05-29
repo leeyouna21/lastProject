@@ -56,24 +56,18 @@ const Main = () => {
           <span>마음의 양식을 쌓고 싶을 땐,<br /> 이곳에서 고민하고 골라보세요.</span >
         </div>
       </div>
-      {/* <div className="navbar">
-        <button 
-          className={activeTab === 'Food' ? 'active' : ''}
-          onClick={() => setActiveTab('Food')}
-        >
-          도서
-        </button>
-        <button 
-          className={activeTab === 'Medi' ? 'active' : ''}
-          onClick={() => setActiveTab('Medi')}
-        >
-          도서2
-        </button>
-      </div> */}
+      <div className="Trv_main">
+                <div className="Trv_container">
+                    <div className="try_title">
+                        <h4>도서 추천</h4>
+                    </div>
+                    <div className="content">
+                        {renderContent()}
+                    </div>
+                </div>
+            </div>
       
-      <div className="content">
-        {renderContent()}
-      </div>
+      
     </div>
   )
 }

@@ -1,12 +1,15 @@
 import React from "react";
-import Medicine from "./components/Main/Medicine/Medicine.jsx"
-import Food from "./components/Main/Food/Food.jsx"
-import Medi from "./components/Main/Medicine/Medi.jsx"
-import MedicineItem from "./components/Main/Medicine/MedicineItem.jsx"
-import FoodItem from "./components/Main/Food/FoodItem.jsx"
-import Book from "./components/Main/Book/Book.jsx"
-import BookItem from "./components/Main/Book/BookItem.jsx"
-import Book_button from "./components/Main/Book/Book_button.jsx"
+import Medicine from "./components/Main/Medicine/Medicine.jsx";
+import Food from "./components/Main/Food/Food.jsx";
+import Medi from "./components/Main/Medicine/Medi.jsx";
+import MedicineItem from "./components/Main/Medicine/MedicineItem.jsx";
+import FoodItem from "./components/Main/Food/FoodItem.jsx";
+import Book from "./components/Main/Book/Book.jsx";
+import BookItem from "./components/Main/Book/BookItem.jsx";
+import Book_button from "./components/Main/Book/Book_button.jsx";
+import Edu from "./components/Main/Edu/Edu.jsx";
+import Edu_btn from "./components/Main/Edu/Edu_btn.jsx";
+import EduItem from "./components/Main/Edu/EduItem.jsx";
 
 
 
@@ -27,8 +30,9 @@ function App() {
           <Route path="/Book" element={<Book />} />
           <Route path="/BookItem" element={<BookItem />} />
           <Route path="/Book_button" element={<Book_button />} />
-
-
+          <Route path="/Edu" element={<Edu />} />
+          <Route path="/Edu_btn" element={<Edu_btn />} />
+          <Route path="/EduItem" element={<EduItem />} />
         </Routes>
       </Router>      
     </div>

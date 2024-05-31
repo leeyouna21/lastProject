@@ -105,15 +105,14 @@
     }
     .Trv_main {
         width: 100%;
-        height: auto;
-        // background: #bfbfbf;
-        margin-bottom: 100px;
+        height: 2000px;
+        background: #fff;
         .Trv_container {
             width: calc(100% - 80px);
             height: 1800px;
             margin: 0 auto;
-            border: 1px solid #e4e4e4;
-            border-radius: 20px;
+            // border: 1px solid #e4e4e4;
+
             margin-top: 50px;
             position: relative;
             .try_title {

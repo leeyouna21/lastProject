@@ -13,18 +13,18 @@ const International = () => {
         <div className="container">
         <div className="theme_title">
             <div className="choice">
-            <button
-                className={category === 'theme' ? 'active' : ''}
-                onClick={() => setCategory('theme')}
-            >
-                테마여행
-            </button>
-            <button
-                className={category === 'general' ? 'active' : ''}
-                onClick={() => setCategory('general')}
-            >
-                무난히 다 가기 좋은 여행
-            </button>
+                <button
+                    className={category === 'theme' ? 'active' : ''}
+                    onClick={() => setCategory('theme')}
+                >
+                    테마여행
+                </button>
+                <button
+                    className={category === 'general' ? 'active' : ''}
+                    onClick={() => setCategory('general')}
+                >
+                    무난히 다 가기 좋은 여행
+                </button>
             </div>
         </div>
         <div className="box_wrap">

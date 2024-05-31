@@ -9,6 +9,8 @@ import International from "./components/Travel/International";
 import Banner from "./components/Banner/Banner";
 import With from "./components/With/With";
 import Board from "./components/Board/Board";
+import News from "./components/News/News";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';  
 
 
@@ -31,6 +33,8 @@ function App() {
           <Route path="/Banner" element={<Banner />} />
           <Route path="/With" element={<With />} />
           <Route path="/Board" element={<Board />} />
+          <Route path="/News" element={<News />} />
+          <Route path="/Footer" element={<Footer />} />
         </Routes>
       </Router>
     </div>

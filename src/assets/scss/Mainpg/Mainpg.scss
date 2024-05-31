@@ -14,15 +14,17 @@
         // background: #ffecec;
         height: 200px;
         .logo {
-            width: 20px;
-            height: 20px;
+            width: 60px;
+            height: 60px;
             background-repeat: no-repeat;
             background-size: contain;
+            position: absolute;
+            top: 50px;
+            left: 110px;
         }
         .main_search {
             padding-top: 100px;
             width: 100%;
-            
             input {
                 width: 100%;
                 height: 60px;
@@ -34,10 +36,14 @@
                 appearance: none;
                 outline:none;
                 font-size: 20px;
+                // margin-left: 10px;
+                padding-left: 20px;
+
             }
             input::placeholder {
                 font-size: 15px;
                 color: #888;
+
             }
         }
         .category_wrap {
@@ -122,6 +128,91 @@
                 border: 1px solid #e4e4e4;
                 border-radius: 20px;
                 margin-bottom: 10px;
+                padding: 10px;
+                .BP_title {
+                    width: calc(100% - 10px);
+                    // background: #e4e4e4;
+                    margin: 0 auto;
+                    justify-content: space-between;
+                    display: flex;
+                    position: relative;
+                    padding-top: 3px;
+                    ::after {
+                        content: "";
+                        width: 478px;
+                        height: 1px;
+                        background: #e4e4e4;
+                        position: absolute;
+                        left: -15px;
+                        top: 30px;
+                    }
+                    p {
+                        font-weight: 700;
+                    }
+                    .BP_more {
+                        cursor: pointer;
+                        font-weight: 700;
+                    }
+                }
+                .table {
+                    padding-top: 20px;
+                    width: calc(100% - 20px);
+                    // background: #e4e4e4;
+                    margin: 0 auto;
+                    // justify-content: space-between;
+                    // display: flex;
+                    position: relative;
+                    .Title {
+                        font-size: 15px;
+                        font-weight: 800;
+                        // margin-right: 10px;
+                        padding-left: 10px;
+                        color: #000;
+                        &::after {
+                            content: "";
+                            width: 478px;
+                            height: 1px;
+                            background: #e4e4e4;
+                            position: absolute;
+                            left: -20px;
+                            top: 45px;
+                        }
+                        &::before {
+                            content: "";
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 100px;
+                            background: #5a5a5a;
+                            position: absolute;
+                            left: -5px;
+                            top: 27px;
+                        }
+                        &:last-child::after {
+                            content: none; /* 마지막 자식의 경우 가상 요소 제거 */
+                        }
+                    }
+                    // .Title::after {
+                    //     content: "";
+                    //     width: 478px;
+                    //     height: 1px;
+                    //     background: #e4e4e4;
+                    //     position: absolute;
+                    //     left: -15px;
+                    //     top: 45px;
+                    // }
+                    // .Title:last-child::after {
+                    //     content: none; /* 마지막 자식의 경우 가상 요소 제거 */
+                    // }
+                    .Data {
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: #888;
+                        // text-align: right;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+                
             }
             .weather_wrap {
                 width: 100%;

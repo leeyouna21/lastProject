@@ -10,6 +10,9 @@ import Book_button from "./components/Main/Book/Book_button.jsx";
 import Edu from "./components/Main/Edu/Edu.jsx";
 import Edu_btn from "./components/Main/Edu/Edu_btn.jsx";
 import EduItem from "./components/Main/Edu/EduItem.jsx";
+import Hobby from "./components/Main/Hobby/Hobby.jsx";
+import Hobby_Item from "./components/Main/Hobby/HobbyItem.jsx";
+import Hobby_btn from "./components/Main/Hobby/Hobby_btn.jsx";
 
 
 
@@ -31,8 +34,11 @@ function App() {
           <Route path="/BookItem" element={<BookItem />} />
           <Route path="/Book_button" element={<Book_button />} />
           <Route path="/Edu" element={<Edu />} />
-          <Route path="/Edu_btn" element={<Edu_btn />} />
           <Route path="/EduItem" element={<EduItem />} />
+          <Route path="/Edu_btn" element={<Edu_btn />} />
+          <Route path="/Hobby" element={<Hobby />} />
+          <Route path="/Hobby_Item" element={<Hobby_Item />} />
+          <Route path="/Hobby_btn" element={<Hobby_btn />} />
         </Routes>
       </Router>      
     </div>

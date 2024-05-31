@@ -3,7 +3,7 @@ import EduItem from './EduItem';
 import { EasyData, MiddleData, HardData } from '../Edu';
 
 const Edu_btn = () => {
-  const [category, setCategory] = useState('sdf');
+  const [category, setCategory] = useState('Easy');
 
   return (
     <div>
@@ -36,30 +36,27 @@ const Edu_btn = () => {
               <EduItem
                 key={index}
                 title={item.title}
-                location={item.location}
-                moreinfo={item.moreinfo}
-                imgSrc={item.imgSrc}
-                imgAlt={item.imgAlt}
+                desc={item.desc}
+                hashes={item.hashes}
+                link={item.link}
               />
             ))}
             {category === 'Middle' && MiddleData.map((item, index) => (
               <EduItem
                 key={index}
                 title={item.title}
-                location={item.location}
-                moreinfo={item.moreinfo}
-                imgSrc={item.imgSrc}
-                imgAlt={item.imgAlt}
+                desc={item.desc}
+                hashes={item.hashes}
+                link={item.link}
               />
             ))}
             {category === 'Hard' && HardData.map((item, index) => (
               <EduItem
                 key={index}
                 title={item.title}
-                location={item.location}
-                moreinfo={item.moreinfo}
-                imgSrc={item.imgSrc}
-                imgAlt={item.imgAlt}
+                desc={item.desc}
+                hashes={item.hashes}
+                link={item.link}
               />
             ))}
           </div>

@@ -1,314 +1,124 @@
 export const EasyData = [
     {
-        title: '찬란한 이혼',
-        location: '로맨스',
-        moreinfo: '알렛',
-        imgSrc: '/image/Ro_1.png',
-        imgAlt: '도서'
+        title: '초보 회화',
+        desc: '5060 왕초보를 위한 영어 흘려듣기',
+        hashes: ['#왕초보', '#5060', '#회화'],
+        link : 'https://www.youtube.com/watch?v=MC_gntrPYSI'
+
     },
     {
-        title: '너와 닿으면',
-        location: '로맨스',
-        moreinfo: '서바다',
-        imgSrc: '/image/Ro_2.png',
-        imgAlt: '도서'
+        title: '초보 회화',
+        desc: '왕초보 영어회화',
+        hashes: ['#왕초보', '반복재생', '#회화'],
+        link : 'https://www.youtube.com/watch?v=TFnThlz9gaQ'
+
     },
     {
-        title: '동백꽃 핀 자리',
-        location: '로맨스',
-        moreinfo: '서은수',
-        imgSrc: '/image/Ro_3.png',
-        imgAlt: '도서'
+        title: '초보 회화',
+        desc: '[스푼영어] 기초영어회화 200문장',
+        hashes: ['#기초영어', '#200문장', '#스푼영어'],
+        link : 'https://www.youtube.com/watch?v=LSdv4PoG3Vo'    
+
     },
     {
-        title: '돌아봐줘',
-        location: '로맨스',
-        moreinfo: '박주성',
-        imgSrc: '/image/Ro_4.png',
-        imgAlt: '도서'
+        title: '초보 단어',
+        desc: '중년을 위한 초등 영어단어 800',
+        hashes: ['#중년', '#초등수준', '#영어단어'],
+        link : 'https://www.youtube.com/watch?v=hD9WhmQXmhk'    
+
     },
     {
-        title: '여름방학 : 너를 좋아한 계절',
-        location: '로맨스',
-        moreinfo: '김빵',
-        imgSrc: '/image/Ro_5.png',
-        imgAlt: '도서'
+        title: '초보 단어',
+        desc: '5060을 위한 기초 영어 단어 공부하기',
+        hashes: ['#5060', '#기초', '#영어단어'],
+        link : 'https://www.youtube.com/watch?v=paovNc54DVI'
+
     },
     {
-        title: '현란한 그랑 센',
-        location: '로맨스',
-        moreinfo: '큐비',
-        imgSrc: '/image/Ro_6.png',
-        imgAlt: '도서'
+        title: '초보 단어',
+        desc: '영어단어1000개 | 영어 회화를 위한 필수 단어',
+        hashes: ['#필수', '많은단어', '#초보'],
+        link : 'https://www.youtube.com/watch?v=8V3n0GjLNIM'
+
     },
     {
-        title: '육궁봉화',
-        location: '로맨스',
-        moreinfo: '심조실락적애정',
-        imgSrc: '/image/Ro_7.png',
-        imgAlt: '도서'
+        title: '초보 회화',
+        desc: '[스푼영어] 기초영어회화 200문장',
+        hashes: ['#기초영어', '#200문장', '#스푼영어'],
+        link : 'https://www.youtube.com/watch?v=MC_gntrPYSI'    
+
     },
     {
-        title: '태자입희지후',
-        location: '로맨스',
-        moreinfo: '암향',
-        imgSrc: '/image/Ro_8.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '장상사',
-        location: '로맨스',
-        moreinfo: '동화',
-        imgSrc: '/image/Ro_9.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '옷소매 붉은 끝동',
-        location: '로맨스',
-        moreinfo: '강미강',
-        imgSrc: '/image/Ro_10.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '강산미인모',
-        location: '로맨스',
-        moreinfo: '수당',
-        imgSrc: '/image/Ro_11.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '경성탐정사무소',
-        location: '로맨스',
-        moreinfo: '박하민',
-        imgSrc: '/image/Ro_12.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '어린 황후',
-        location: '로맨스',
-        moreinfo: '청어람',
-        imgSrc: '/image/Ro_13.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '키메라',
-        location: '로맨스',
-        moreinfo: '홍수연',
-        imgSrc: '/image/Ro_14.png',
-        imgAlt: '도서'
+        title: '초보 단어',
+        desc: '중년을 위한 초등 영어단어 800',
+        hashes: ['#중년', '#초등수준', '#영어단어'],
+        link : 'https://www.youtube.com/watch?v=MC_gntrPYSI'
+
     }
 ];
 export const MiddleData = [
     {
-        title: '아직도 악어와 악어새 이야기를 믿어?',
-        location: '청소년',
-        moreinfo: '이하늬',
-        imgSrc: '/image/Te_1.png',
-        imgAlt: '도서'
+        title: '중급 회화',
+        desc: '효율적인 영어 듣기 트레이닝(중급 레벨)',
+        hashes: ['#중급영어', '#효율적', '#영어듣기'],
+        link : 'https://www.youtube.com/watch?v=A7695NrFEu0'
     },
     {
-        title: '슬기롭게 써먹는 화학 치트키',
-        location: '청소년',
-        moreinfo: '천페이딩',
-        imgSrc: '/image/Te_2.png',
-        imgAlt: '도서'
+        title: '중급 회화',
+        desc: '중급 영어 문장 500',
+        hashes: ['#중년', '#중급', '#영어문장'],
+        link : 'https://www.youtube.com/watch?v=66a-cC7Row4'
     },
     {
-        title: '율의 시선',
-        location: '청소년',
-        moreinfo: '김민서',
-        imgSrc: '/image/Te_3.png',
-        imgAlt: '도서'
+        title: '중급 회화',
+        desc: '약간 긴 영어 문장 500',
+        hashes: ['#긴문장', '#5060', '#회화'],
+        link : 'https://www.youtube.com/watch?v=l4tS3-zDDms'
+
     },
     {
-        title: '여름을 한 입 베어 물었더니',
-        location: '청소년',
-        moreinfo: '이꽃님',
-        imgSrc: '/image/Te_4.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '셰이커',
-        location: '청소년',
-        moreinfo: '이희영',
-        imgSrc: '/image/Te_5.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '세계를 건너 너에게 갈게',
-        location: '청소년',
-        moreinfo: '이꽃님',
-        imgSrc: '/image/Te_6.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '가짜 모범생',
-        location: '청소년',
-        moreinfo: '손현수',
-        imgSrc: '/image/Te_7.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '아몬드',
-        location: '청소년',
-        moreinfo: '손원평',
-        imgSrc: '/image/Te_8.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '체리새우 : 비밀글입니다',
-        location: '청소년',
-        moreinfo: '황영미',
-        imgSrc: '/image/Te_9.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '10대를 위한 총균쇠 수업',
-        location: '청소년',
-        moreinfo: '김정진',
-        imgSrc: '/image/Te_10.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '이토록 공부가 재미있어지는 순간',
-        location: '청소년',
-        moreinfo: '박성혁',
-        imgSrc: '/image/Te_11.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '생기부 과학 필독서 40',
-        location: '청소년',
-        moreinfo: '방희조',
-        imgSrc: '/image/Te_12.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '비스킷',
-        location: '청소년',
-        moreinfo: '김선미',
-        imgSrc: '/image/Te_13.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '죽이고 싶은 아이',
-        location: '청소년',
-        moreinfo: '이꽃님',
-        imgSrc: '/image/Te_14.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '오백 년째 열다섯',
-        location: '청소년',
-        moreinfo: '김혜정',
-        imgSrc: '/image/Te_15.png',
-        imgAlt: '도서'
+        title: '중급 단어',
+        desc: '중급 필수 동사 300개',
+        hashes: ['#중급', '필수', '#동사'],
+        link : 'https://www.youtube.com/watch?v=cy4JxsY7_6w'
     }
 ];
 export const HardData = [
     {
-        title: '아직도 악어와 악어새 이야기를 믿어?',
-        location: '청소년',
-        moreinfo: '이하늬',
-        imgSrc: '/image/Te_1.png',
-        imgAlt: '도서'
+        title: '고급 회화',
+        desc: '직장인에게 평생 도움되는 영어 문장',
+        hashes: ['#직장인', '#고급', '#반복재생'],
+        link : 'https://www.youtube.com/watch?v=_4Iuajx_prI'
+
     },
     {
-        title: '슬기롭게 써먹는 화학 치트키',
-        location: '청소년',
-        moreinfo: '천페이딩',
-        imgSrc: '/image/Te_2.png',
-        imgAlt: '도서'
+        title: '고급 회화',
+        desc: '효율적인 영어 듣기 트레이닝',
+        hashes: ['#중상급', '독학', '#효율적'],
+        link : 'https://www.youtube.com/watch?v=5b_IVVmj92Q'
     },
     {
-        title: '율의 시선',
-        location: '청소년',
-        moreinfo: '김민서',
-        imgSrc: '/image/Te_3.png',
-        imgAlt: '도서'
+        title: '고급 회화',
+        desc: '한계를 뛰어넘어! 고급 영어 듣기 연습',
+        hashes: ['#고급영어', '#한계돌파', '#영어듣기'],
+        link : 'https://www.youtube.com/watch?v=IxlE9Yb6jho'
     },
     {
-        title: '여름을 한 입 베어 물었더니',
-        location: '청소년',
-        moreinfo: '이꽃님',
-        imgSrc: '/image/Te_4.png',
-        imgAlt: '도서'
+        title: '고급 단어',
+        desc: '[토익 고급 단어 100개 1탄] 잠자면서 토익 고득점 영어단어 외우기!',
+        hashes: ['#고급단어', '#자면서', '#토익'],
+        link : 'https://www.youtube.com/watch?v=Su4hwMQQL_k'
     },
     {
-        title: '셰이커',
-        location: '청소년',
-        moreinfo: '이희영',
-        imgSrc: '/image/Te_5.png',
-        imgAlt: '도서'
+        title: '고급 단어',
+        desc: '수능에서 어려운 영어단어 1,000개 스피드 암기',
+        hashes: ['#수능영어', '#1,000개', '#스피드'],
+        link : 'https://www.youtube.com/watch?v=qbbq1F_PytA'
     },
     {
-        title: '세계를 건너 너에게 갈게',
-        location: '청소년',
-        moreinfo: '이꽃님',
-        imgSrc: '/image/Te_6.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '가짜 모범생',
-        location: '청소년',
-        moreinfo: '손현수',
-        imgSrc: '/image/Te_7.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '아몬드',
-        location: '청소년',
-        moreinfo: '손원평',
-        imgSrc: '/image/Te_8.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '체리새우 : 비밀글입니다',
-        location: '청소년',
-        moreinfo: '황영미',
-        imgSrc: '/image/Te_9.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '10대를 위한 총균쇠 수업',
-        location: '청소년',
-        moreinfo: '김정진',
-        imgSrc: '/image/Te_10.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '이토록 공부가 재미있어지는 순간',
-        location: '청소년',
-        moreinfo: '박성혁',
-        imgSrc: '/image/Te_11.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '생기부 과학 필독서 40',
-        location: '청소년',
-        moreinfo: '방희조',
-        imgSrc: '/image/Te_12.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '비스킷',
-        location: '청소년',
-        moreinfo: '김선미',
-        imgSrc: '/image/Te_13.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '죽이고 싶은 아이',
-        location: '청소년',
-        moreinfo: '이꽃님',
-        imgSrc: '/image/Te_14.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '오백 년째 열다섯',
-        location: '청소년',
-        moreinfo: '김혜정',
-        imgSrc: '/image/Te_15.png',
-        imgAlt: '도서'
+        title: '고급 단어',
+        desc: '일일 고급 영어 단어(텝스 및 공무원시험준비용)',
+        hashes: ['#고급단어', '#공무원', '#텝스'],
+        link : 'https://www.youtube.com/watch?v=mXKHGaGz4ts'
     }
 ];

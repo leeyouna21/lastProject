@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+
 import Edu_btn from './Edu_btn';
 
 
 
 const Main = () => {
-  const [activeTab, setActiveTab] = useState('Food');
+  const [activeTab, setActiveTab] = useState('Edu');
   const images = ['./image/교육.png', './image/교육2.png', './image/교육3.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -61,20 +62,6 @@ const Main = () => {
                 <div className="Trv_container">
                     <div className="try_title">
                         <h4>교육 추천</h4>
-                        {/* {/* <div className="navbar">
-                            <button
-                                className={activeTab === 'Medi' ? 'active' : ''}
-                                onClick={() => setActiveTab('Medi')}
-                            >
-                            영양제
-                            </button>
-                            <button
-                                className={activeTab === 'Food' ? 'active' : ''}
-                                onClick={() => setActiveTab('Food')}
-                            >
-                            음식
-                            </button> */}
-                        {/* </div> */}
                     </div>
                     <div className="content">
                         {renderContent()}

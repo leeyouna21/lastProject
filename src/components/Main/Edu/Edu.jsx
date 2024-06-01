@@ -55,19 +55,19 @@ const Main = () => {
           />
         </div>
         <div className="themeinfobox">
-          <span>교육교육교육교육교육<br /> 교육교육교육교육교육</span >
+          <span>배움에는 시기가 없습니다,<br /> 이곳에서 배움을 시작해보세요!</span >
         </div>
       </div>
       <div className="Trv_main">
-                <div className="Trv_container">
-                    <div className="try_title">
-                        <h4>교육 추천</h4>
-                    </div>
-                    <div className="content">
-                        {renderContent()}
-                    </div>
-                </div>
+        <div className="Trv_container">
+            <div className="try_title">
+              <h4>교육 추천</h4>
+          </div>
+            <div className="content">
+              {renderContent()}
             </div>
+          </div>
+      </div>
       
       
     </div>

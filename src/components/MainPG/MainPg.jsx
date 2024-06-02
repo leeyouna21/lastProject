@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useContext } from 'react';
 import Weather from '../MainPG/Weather';
 import Login from '../Login/Login';
 import Banner from '../Banner/Banner';
@@ -6,11 +6,13 @@ import Travel from '../Travel/Travel';
 // import Login from '../Login/Login';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
-
+import { UserContext } from '../../UserContext';
 
 
 
 const MainPg = () => {
+    const { user } = useContext(UserContext);
+
   return (
     <div>
         <div className="main_wrap">
@@ -63,7 +65,13 @@ const MainPg = () => {
                     <div className="News"></div>
                 </div>
                 <div className="btm_right">
-                    <div className="login_wrap">
+                    
+                    {/* <div className="login_wrap">
+                    {user ? (
+                        <p>로그인 성공: {user.email}</p>
+                    ) : (
+                        <p>로그인 정보가 없습니다.</p>
+                    )}
                         <span>로그인 하시고 더 다양한 플랫폼을 즐겨보세요!</span>
                             <a href="../Login">
                                 <div className="login_box">
@@ -75,6 +83,32 @@ const MainPg = () => {
                             <div className="ID">아이디</div>
                             <div className="PW">비밀번호 찾기</div>
                         </div>
+                    </div> */}
+                    <div className="login_wrap">
+                        {user ? (
+                            <>
+                            <p>로그인 성공: {user.email}</p>
+                            <span>반갑습니다.</span>
+                            <div className="login_box">
+                                <h4>{user.email}</h4>
+                            </div>
+                            </>
+                        ) : (
+                            <>
+                            {/* <p>로그인 정보가 없습니다.</p> */}
+                            <span>로그인 하시고 더 다양한 플랫폼을 즐겨보세요!</span>
+                            <a href="../Login">
+                                <div className="login_box">
+                                <h4>로그인</h4>
+                                </div>
+                            </a>
+                            <div className="sub_wrap">
+                                <div className="sing">회원가입</div>
+                                <div className="ID">아이디</div>
+                                <div className="PW">비밀번호 찾기</div>
+                            </div>
+                            </>
+                        )}
                     </div>
                     {/* <div className="weather_wrap">
                         <Weather></Weather>

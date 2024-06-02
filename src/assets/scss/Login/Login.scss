@@ -253,15 +253,32 @@
                     }
                 }
 
-                .kakao-login {
+                .google-login {
                     width: 100%;
                     padding: 17px;
-                    background: #FEE500;
-                    color: #191919;
+                    background: #34a856;
+                    color: #fff;
                     border: none;
                     border-radius: 7px;
                     cursor: pointer;
+                    display: flex;
                     font-size: 1.2em;
+                    justify-content: center;
+                    .google_icon {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-brand-google' width='44' height='44' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M20.945 11a9 9 0 1 1 -3.284 -5.997l-2.655 2.392a5.5 5.5 0 1 0 2.119 6.605h-4.125v-3h7.945z' /%3E%3C/svg%3E");
+                        width: 30px;
+                        height: 30px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-right: 10px;
+
+                    }
+                    h5 {
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-right: 20px;
+                        margin-top: 5px;
+                    }
                 }
             }
         }

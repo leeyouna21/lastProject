@@ -1,0 +1,137 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+.title_wrap {
+  width: 100%;
+  height: auto;
+  .container {
+      width: calc(100% - 140px);
+      height: auto;
+      margin: 0 auto;
+      .theme_title {
+          .choice {
+              font-family: pretendard !important;
+              display: flex;
+              padding-top: 10px;
+              // margin-top: 10px;
+              margin-bottom: 10px;
+              margin-left: -10px;
+          }
+          .choice button {
+              background-color: #f0f0f0;
+              border: 2px solid transparent;
+              border-radius: 5px;
+              padding: 10px 20px;
+              margin: 0 10px;
+              cursor: pointer;
+              font-family: pretendard !important;
+              transition: all 0.3s ease;
+          }
+          .choice button:hover {
+              background-color: #e0e0e0;
+          }
+          .choice button.active {
+              background-color: #1472C7;
+              border-color: #0f5a9d;
+              color: white;
+              border: none;
+          }
+      }
+      .box_wrap {
+          display: flex;
+          flex-wrap: wrap;
+          .location_wrap {
+              margin-right: 35px;
+              width: calc(30.3333% - 20px);
+              height: 330px;
+              border: 1px solid #d9d9d9;
+              border-radius: 5px;
+              padding: 10px;
+              // margin-left: 15px;
+              margin-bottom: 20px;
+              :last-child {
+                  margin-right: none !important;
+              }
+              .location {
+                  margin-left: 20px;
+                  margin-bottom: 10px;
+                  display: flex;
+                  font-family: pretendard !important;
+                  .tre_title {
+                      font-size: 18px;
+                      // font-family: pretendard !important;
+                      cursor: pointer;
+                      color: #1472C7;
+                      font-weight: 800;
+                      margin-right: 20px;
+                  }
+                  .tre_location {
+                      font-size: 14px;
+                      // font-family: pretendard !important;
+                      color: #676767;
+                  }
+              }
+          }
+          .tre_desc {
+              // text-align: center;
+              margin-left: 20px;
+              margin-bottom: 10px;
+              font-size: 14px;
+              font-family: pretendard !important;
+              height: 80px;
+              // background: #000;
+              // white-space: nowrap;
+          }
+          .tre_hash {
+              margin-left: 20px;
+              // text-align: center;
+              margin-bottom: 10px;
+              font-family: pretendard !important;
+              width: auto;
+              height: auto;
+              display: flex;
+              text-align: center;
+              align-items: center;
+              white-space: nowrap;
+              h6 {
+                  padding: 5px;
+                  font-family: pretendard !important;
+                  margin-right: 8px;
+                  width: auto;
+                  height: auto;
+                  background: #F0F0F3;
+                  border-radius: 5px;
+                  color: #555558;
+                  
+              }
+          }
+          .tre_img {
+              margin-left: 30%;
+              display: flex;
+              justify-content: center;
+              width: auto;
+              height: 100px;
+              background-repeat: no-repeat;
+              background-size: contain;
+              border-radius: 10px;
+              // margin-top: 10px;
+              margin-bottom: 50px;
+              
+          }
+          .booking {
+              margin-left: 20px;
+              font-family: pretendard !important;
+              width: 355px;
+              height: 40px;
+              border: 1px solid #e4e4e4;
+              border-radius: 5px;
+              text-align: center;
+              justify-content: center;
+              display: flex;
+              margin-top: 10px;
+              h5 {
+                  margin-top: 10px;
+                  cursor: pointer;
+              }
+          }
+      }
+  }
+}

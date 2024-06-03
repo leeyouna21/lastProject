@@ -130,7 +130,9 @@ const MainPg = () => {
                     <div className="Board_Preview_wrap">
                         <div className="BP_title">
                             <p>시니어클럽 자유게시판</p>
-                            <p className='BP_more'>더보기</p>
+                            <a href="../Board">
+                                <p className='BP_more'>더보기</p>
+                            </a>
                         </div>
                         <div className="table">
                             <tr>

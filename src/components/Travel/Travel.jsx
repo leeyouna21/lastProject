@@ -8,6 +8,7 @@ const Input = (props) => {
 
 const Travel = () => {
     const [activeTab, setActiveTab] = useState('domestic');
+    // const { user } = useContext(UserContext);
 
     const renderContent = () => {
         if (activeTab === 'domestic') {
@@ -50,11 +51,9 @@ const Travel = () => {
                     ))}
                 </div>
                 <div className="header_wrap">
-                    <button className='Home'>마크위치</button>
-                    <div className="login_but">
-                        <button className='Login'>로그인</button>
-                        <button className='Sing'>회원가입</button>
-                    </div>
+                    <a href="../MainPG">
+                        <h4>Senior club</h4>
+                    </a>
                 </div>
                 <div className="bottom_wrap">
                     <h3>테마 여행</h3>

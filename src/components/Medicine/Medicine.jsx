@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import Food from '../Food/Food';
+import Medi from './Medi';
 
-import Book_button from './Book_button';
 
 const Main = () => {
-  const [activeTab, setActiveTab] = useState('Book');
-  const images = ['./image/도서.png', './image/도서2.png', './image/도서3.png'];
+  const [activeTab, setActiveTab] = useState('Food');
+  const images = ['./image/건강.png', './image/건강2.png', './image/건강3.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -17,10 +18,10 @@ const Main = () => {
   }, [images.length]);
 
   const renderContent = () => {
-    if (activeTab === 'Book') {
-      return <Book_button />;
-    } else if (activeTab === 'Book') {
-      return <Book_button />;
+    if (activeTab === 'Food') {
+      return <Food />;
+    } else if (activeTab === 'Medi') {
+      return <Medi />;
     }
   };
 
@@ -34,16 +35,16 @@ const Main = () => {
             src={images[currentImageIndex]}
           />
           <div className="top_wrap">
-            <div className="markbox">
-              <button>마크위치</button>
-            </div>
+            <a href="../MainPG">
+              <h4>Senior club</h4>
+            </a>
             <div className="loginbox">
               <button>로그인</button><h3>/</h3><button>회원가입</button>
             </div>
           </div>
         </div>
         <div className="themebox">
-          <button>도서</button>
+          <button>건강</button>
         </div>
         <div className="inputbox">
           <input
@@ -53,13 +54,27 @@ const Main = () => {
           />
         </div>
         <div className="themeinfobox">
-          <span>마음의 양식을 쌓고 싶을 땐,<br /> 이곳에서 고민하고 골라보세요.</span >
+          <span>어떤 음식이 어디에 좋은지,<br /> 어떤 영양제를 먹을지 추천과 구매를 한번에.</span >
         </div>
       </div>
       <div className="Trv_main">
                 <div className="Trv_container">
                     <div className="try_title">
-                        <h4>도서 추천</h4>
+                        <h4>식품 추천</h4>
+                        <div className="navbar">
+                            <button
+                                className={activeTab === 'Medi' ? 'active' : ''}
+                                onClick={() => setActiveTab('Medi')}
+                            >
+                            영양제
+                            </button>
+                            <button
+                                className={activeTab === 'Food' ? 'active' : ''}
+                                onClick={() => setActiveTab('Food')}
+                            >
+                            음식
+                            </button>
+                        </div>
                     </div>
                     <div className="content">
                         {renderContent()}

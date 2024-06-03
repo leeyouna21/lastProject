@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MedicineItem from './MedicineItem';
-import { VitaminAData, VitaminBData } from '../Medicine'; 
+import { VitaminAData, VitaminBData } from '.'; 
 
 const Medi = () => {
     const [category, setCategory] = useState('theme'); 

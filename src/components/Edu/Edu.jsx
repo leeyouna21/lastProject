@@ -36,9 +36,9 @@ const Main = () => {
             src={images[currentImageIndex]}
           />
           <div className="top_wrap">
-            <div className="markbox">
-              <button>마크위치</button>
-            </div>
+            <a href="../MainPG">
+              <h4>Senior club</h4>
+            </a>
             <div className="loginbox">
               <button>로그인</button><h3>/</h3><button>회원가입</button>
             </div>

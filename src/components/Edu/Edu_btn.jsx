@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import EduItem from './EduItem'; 
-import { EasyData, MiddleData, HardData } from '../Edu';
+import { EasyData, MiddleData, HardData } from '.';
 
 const Edu_btn = () => {
   const [category, setCategory] = useState('Easy');

@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 import Hobby_btn from './Hobby_btn';
+// import { UserContext } from '../../UserContext';
 
 const Main = () => {
+  // const { user } = useContext(UserContext);
+
+
   const [activeTab, setActiveTab] = useState('Hobby');
   const images = ['./image/취미.png', './image/취미2.png', './image/취미3.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -34,11 +38,11 @@ const Main = () => {
             src={images[currentImageIndex]}
           />
           <div className="top_wrap">
-            <div className="markbox">
-              <button>마크위치</button>
-            </div>
+            <a href="../MainPG">
+                <h4>Senior club</h4>
+            </a>
             <div className="loginbox">
-              <button>로그인</button><h3>/</h3><button>회원가입</button>
+              {/* <h3>{user.email}</h3> */}
             </div>
           </div>
         </div>

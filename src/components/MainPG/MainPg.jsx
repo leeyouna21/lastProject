@@ -7,6 +7,7 @@ import Travel from '../Travel/Travel';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import { UserContext } from '../../UserContext';
+import Medi from 'components/Medicine/Medi';
 
 
 
@@ -29,30 +30,30 @@ const MainPg = () => {
                     </form>
                 </div>
                 <div className="category_wrap">
-                    <div className="icon">
-                        <img className='iconImg' src="/image/health.png" alt="" />
+                    <a href="../Medicine" className="icon">
+                        <img className='iconImg' src="/image/health.png" alt="Health Icon" />
                         <h4>건강</h4>
-                    </div>
-                    <Link to="/travel" className="icon">
+                    </a>
+                    <a href="../Travel" className="icon">
                         <img className="iconImg" src="/image/travel.png" alt="" />
                         <h4>여행</h4>
-                    </Link>
-                    <div className="icon">
+                    </a>
+                    <a href="../Hobby"  className="icon">
                         <img className='iconImg' src="/image/hobby.png" alt="" />
                         <h4>취미</h4>
-                    </div>
+                    </a>
                     <div className="icon">
                         <img className='iconImg' src="/image/money.png" alt="" />
                         <h4>일자리</h4>
                     </div>
-                    <div className="icon">
+                    <a href="../Edu" className="icon">
                         <img className='iconImg' src="/image/education.png" alt="" />
                         <h4>교육</h4>
-                    </div>
-                    <div className="icon">
+                    </a>
+                    <a href="../Book"  className="icon">
                         <img className='iconImg' src="/image/book.png" alt="" />
                         <h4>도서</h4>
-                    </div>
+                    </a>
                     <div className="icon">
                         <img className='iconImg' src="/image/running.png" alt="" />
                         <h4>운동</h4>
@@ -87,10 +88,14 @@ const MainPg = () => {
                     <div className="login_wrap">
                         {user ? (
                             <>
-                            <p>로그인 성공: {user.email}</p>
+                            {/* <p>로그인 성공: {user.email}</p> */}
                             <span>반갑습니다.</span>
                             <div className="login_box">
                                 <h4>{user.email}</h4>
+                            </div>
+                            <div className="sub_wrap1">
+                                <div className="logout">로그아웃</div>
+                                <div className="mypage">마이페이지</div>
                             </div>
                             </>
                         ) : (

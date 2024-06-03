@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import FoodItem from './FoodItem';
-import { RiverData, HeartData } from '../Food';
+import { RiverData, HeartData } from '.';
 
 const Food = () => {
   const [category, setCategory] = useState('theme'); 

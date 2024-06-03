@@ -13,20 +13,20 @@ import With from "./components/With/With";
 import Board from "./components/Board/Board";
 import News from "./components/News/News";
 import Footer from "./components/Footer/Footer";
-import Medicine from "./components/Main/Medicine/Medicine.jsx";
-import Food from "./components/Main/Food/Food.jsx";
-import Medi from "./components/Main/Medicine/Medi.jsx";
-import MedicineItem from "./components/Main/Medicine/MedicineItem.jsx";
-import FoodItem from "./components/Main/Food/FoodItem.jsx";
-import Book from "./components/Main/Book/Book.jsx";
-import BookItem from "./components/Main/Book/BookItem.jsx";
-import Book_button from "./components/Main/Book/Book_button.jsx";
-import Edu from "./components/Main/Edu/Edu.jsx";
-import Edu_btn from "./components/Main/Edu/Edu_btn.jsx";
-import EduItem from "./components/Main/Edu/EduItem.jsx";
-import Hobby from "./components/Main/Hobby/Hobby.jsx";
-import Hobby_Item from "./components/Main/Hobby/HobbyItem.jsx";
-import Hobby_btn from "./components/Main/Hobby/Hobby_btn.jsx";
+import Medicine from "./components/Medicine/Medicine.jsx";
+import Food from "./components/Food/Food.jsx";
+import Medi from "./components/Medicine/Medi.jsx";
+import MedicineItem from "./components/Medicine/MedicineItem.jsx";
+import FoodItem from "./components/Food/FoodItem.jsx";
+import Book from "./components/Book/Book.jsx";
+import BookItem from "./components/Book/BookItem.jsx";
+import Book_button from "./components/Book/Book_button.jsx";
+import Edu from "./components/Edu/Edu.jsx";
+import Edu_btn from "./components/Edu/Edu_btn.jsx";
+import EduItem from "./components/Edu/EduItem.jsx";
+import Hobby from "./components/Hobby/Hobby.jsx";
+import Hobby_Item from "./components/Hobby/HobbyItem.jsx";
+import Hobby_btn from "./components/Hobby/Hobby_btn.jsx";
 
 function App() {
   return (
@@ -47,7 +47,7 @@ function App() {
             <Route path="/Board" element={<Board />} />
             <Route path="/News" element={<News />} />
             <Route path="/Footer" element={<Footer />} />
-            <Route path = "/" element = {<Navigate to = "/Medicine" />} />
+            {/* <Route path = "/" element = {<Navigate to = "/Medicine" />} /> */}
             <Route path="/Medicine" element={<Medicine />} />
             <Route path="/Food" element={<Food />} />
             <Route path="/Medi" element={<Medi />} />

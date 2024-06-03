@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import BookItem from './BookItem'; 
-import { RomanceData, TeenagerData } from '../Book';
+import { RomanceData, TeenagerData } from '.';
 
 const Book_button = () => {
   const [category, setCategory] = useState('Romance');

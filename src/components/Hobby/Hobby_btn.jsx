@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import HobbyItem from './HobbyItem'; 
-import { RidingData, FishingData } from '../Hobby';
+import { RidingData, FishingData } from '.';
 
 const Hobby_btn = () => {
   const [category, setCategory] = useState('Ride');

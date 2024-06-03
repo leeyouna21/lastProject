@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import html2canvas from 'html2canvas';
-import '../assets/scss/BulletinBoard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarO } from '@fortawesome/free-regular-svg-icons';

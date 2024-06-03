@@ -13,6 +13,9 @@ import EduItem from "./components/Main/Edu/EduItem.jsx";
 import Hobby from "./components/Main/Hobby/Hobby.jsx";
 import Hobby_Item from "./components/Main/Hobby/HobbyItem.jsx";
 import Hobby_btn from "./components/Main/Hobby/Hobby_btn.jsx";
+import Exercise from "./components/Main/Exercise/Exercise.jsx";
+import ExerciseItem from "./components/Main/Exercise/ExerciseItem.jsx";
+import Exercise_btn from "./components/Main/Exercise/Exercise_btn.jsx";
 
 
 
@@ -39,6 +42,9 @@ function App() {
           <Route path="/Hobby" element={<Hobby />} />
           <Route path="/Hobby_Item" element={<Hobby_Item />} />
           <Route path="/Hobby_btn" element={<Hobby_btn />} />
+          <Route path="/Exercise" element={<Exercise />} />
+          <Route path="/ExerciseItem" element={<ExerciseItem />} />
+          <Route path="/Exercise_btn" element={<Exercise_btn />} />
         </Routes>
       </Router>      
     </div>

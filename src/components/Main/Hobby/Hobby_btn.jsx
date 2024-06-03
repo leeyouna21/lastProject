@@ -12,40 +12,40 @@ const Hobby_btn = () => {
           <div className="theme_title">
             <div className="choice">
               <button
-                className={category === 'Riding' ? 'active' : ''}
-                onClick={() => setCategory('Riding')}
+                className={category === 'rest' ? 'active' : ''}
+                onClick={() => setCategory('rest')}
               >
-                라이딩
+                잔잔한 취미
               </button>
               <button
-                className={category === 'Fishing' ? 'active' : ''}
-                onClick={() => setCategory('Fishing')}
+                className={category === 'activity' ? 'active' : ''}
+                onClick={() => setCategory('activity')}
               >
-                낚시
+               액티비티
               </button>
             </div>
           </div>
           <div className="box_wrap">
-            {category === 'Riding' && RidingData.map((item, index) => (
-              <HobbyItem
-                key={index}
-                title={item.title}
-                location={item.location}
-                moreinfo={item.moreinfo}
-                imgSrc={item.imgSrc}
-                imgAlt={item.imgAlt}
-              />
-            ))}
-            {category === 'Fishing' && FishingData.map((item, index) => (
-              <HobbyItem
-                key={index}
-                title={item.title}
-                location={item.location}
-                moreinfo={item.moreinfo}
-                imgSrc={item.imgSrc}
-                imgAlt={item.imgAlt}
-              />
-            ))}
+            {category === 'rest' && RidingData.map((item, index) => (
+                <HobbyItem
+                  key={index}
+                  title={item.title}
+                  desc={item.desc}
+                  hashes={item.hashes}
+                  link={item.link}
+                  thumbnail={item.thumbnail}
+                />
+              ))}
+              {category === 'activity' && FishingData.map((item, index) => (
+                <HobbyItem
+                  key={index}
+                  title={item.title}
+                  desc={item.desc}
+                  hashes={item.hashes}
+                  link={item.link}
+                  thumbnail={item.thumbnail}
+                />
+              ))}
           </div>
         </div>
       </div>

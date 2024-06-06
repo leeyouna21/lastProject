@@ -3,55 +3,54 @@ import MedicineItem from './MedicineItem';
 import { VitaminAData, VitaminBData } from '../Medicine'; 
 
 const Medi = () => {
-    const [category, setCategory] = useState('theme'); 
+  const [category, setCategory] = useState('theme'); 
 
   return (
-    <div>
+    <div className="medicine-page">  
       <div className="title_wrap">
         <div className="container">
-        <div className="theme_title">
+          <div className="theme_title">
             <div className="choice">
-            <button
+              <button
                 className={category === 'theme' ? 'active' : ''}
                 onClick={() => setCategory('theme')}
-            >
+              >
                 멀티비타민
-            </button>
-            <button
+              </button>
+              <button
                 className={category === 'general' ? 'active' : ''}
                 onClick={() => setCategory('general')}
-            >
+              >
                 오메가3
-            </button>
+              </button>
             </div>
-        </div>
-        <div className="box_wrap">
+          </div>
+          <div className="box_wrap">
             {category === 'theme' && VitaminAData.map((item, index) => (
-            <MedicineItem
+              <MedicineItem
                 key={index}
                 title={item.title}
                 location={item.location}
                 moreinfo={item.moreinfo}
                 imgSrc={item.imgSrc}
                 imgAlt={item.imgAlt}
-            />
+              />
             ))}
             {category === 'general' && VitaminBData.map((item, index) => (
-            <MedicineItem
+              <MedicineItem
                 key={index}
                 title={item.title}
                 location={item.location}
                 moreinfo={item.moreinfo}
                 imgSrc={item.imgSrc}
                 imgAlt={item.imgAlt}
-            />
+              />
             ))}
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-
-    </div>
-  )
+  );
 }
 
-export default Medi
+export default Medi;

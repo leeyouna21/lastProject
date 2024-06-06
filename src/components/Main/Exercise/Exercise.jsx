@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from 'react';
-
 import Exercise_btn from './Exercise_btn';
-
-
 
 const Main = () => {
   const [activeTab, setActiveTab] = useState('Exercise');
   const images = ['./image/운동.png', './image/운동2.png', './image/운동3.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fadeIn, setFadeIn] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
+      setFadeIn(false);
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+        setFadeIn(true);
+      }, 500); // 이미지 페이드 아웃 시간과 맞추기
     }, 5000);
+
     return () => clearInterval(interval);
   }, [images.length]);
 
   const renderContent = () => {
     if (activeTab === 'Exercise') {
-      return <Exercise_btn />;
-    } else if (activeTab === 'Exercise') {
       return <Exercise_btn />;
     }
   };
@@ -31,7 +32,7 @@ const Main = () => {
       <div className="photocontainer">
         <div className="themephoto">
           <img
-            className='themephoto1'
+            className={`themephoto1 ${fadeIn ? 'fade-in' : ''}`}
             alt='photo'
             src={images[currentImageIndex]}
           />
@@ -55,23 +56,21 @@ const Main = () => {
           />
         </div>
         <div className="themeinfobox">
-          <span>운동운동운동,<br /> 운동운동운동운동.</span >
+          <span>휴식도 좋지만 건강을 위해서,<br />다양한 운동을 시도해보는건 어떠세요?</span >
         </div>
       </div>
       <div className="Trv_main">
-                <div className="Trv_container">
-                    <div className="try_title">
-                        <h4>운동 추천</h4>
-                    </div>
-                    <div className="content">
-                        {renderContent()}
-                    </div>
-                </div>
-            </div>
-      
-      
+        <div className="Trv_container">
+          <div className="try_title">
+            <h4>운동 추천</h4>
+          </div>
+          <div className="content">
+            {renderContent()}
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Main;

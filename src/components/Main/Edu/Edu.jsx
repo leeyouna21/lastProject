@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from 'react';
-
 import Edu_btn from './Edu_btn';
-
-
 
 const Main = () => {
   const [activeTab, setActiveTab] = useState('Edu');
   const images = ['./image/교육.png', './image/교육2.png', './image/교육3.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fadeIn, setFadeIn] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
+      setFadeIn(false);
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+        setFadeIn(true);
+      }, 500); // 이미지 페이드 아웃 시간과 맞추기
     }, 5000);
+
     return () => clearInterval(interval);
   }, [images.length]);
 
   const renderContent = () => {
     if (activeTab === 'Edu') {
-      return <Edu_btn />;
-    } else if (activeTab === 'Edu') {
       return <Edu_btn />;
     }
   };
@@ -31,7 +32,7 @@ const Main = () => {
       <div className="photocontainer">
         <div className="themephoto">
           <img
-            className='themephoto1'
+            className={`themephoto1 ${fadeIn ? 'fade-in' : ''}`}
             alt='photo'
             src={images[currentImageIndex]}
           />
@@ -60,18 +61,16 @@ const Main = () => {
       </div>
       <div className="Trv_main">
         <div className="Trv_container">
-            <div className="try_title">
-              <h4>교육 추천</h4>
+          <div className="try_title">
+            <h4>교육 추천</h4>
           </div>
-            <div className="content">
-              {renderContent()}
-            </div>
+          <div className="content">
+            {renderContent()}
           </div>
+        </div>
       </div>
-      
-      
     </div>
-  )
+  );
 }
 
 export default Main;

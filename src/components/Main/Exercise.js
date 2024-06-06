@@ -28,7 +28,7 @@ export const UpperData = [
         imgAlt: '운동'
     },
     {
-        title: '이두 컬',
+        title: '덤벨 컬',
         location: '팔 근육',
         moreinfo: '가장 기본적인 팔 근육 운동',
         imgSrc: '/image/health5.png',
@@ -44,45 +44,45 @@ export const UpperData = [
 ];
 export const LowerData = [
     {
-        title: '아직도 악어와 악어새 이야기를 믿어?',
-        location: '청소년',
-        moreinfo: '이하늬',
-        imgSrc: '/image/Te_1.png',
-        imgAlt: '도서'
+        title: '레그컬',
+        location: '햄스트링',
+        moreinfo: '햄스트링 기능 강화',
+        imgSrc: '/image/lower.png',
+        imgAlt: '운동'
     },
     {
-        title: '슬기롭게 써먹는 화학 치트키',
-        location: '청소년',
-        moreinfo: '천페이딩',
-        imgSrc: '/image/Te_2.png',
-        imgAlt: '도서'
+        title: '레그 익스텐션',
+        location: '하체 전면부 근육',
+        moreinfo: '하체 전면부 근육의 기능 강화',
+        imgSrc: '/image/lower2.png',
+        imgAlt: '운동'
     },
     {
-        title: '율의 시선',
-        location: '청소년',
-        moreinfo: '김민서',
-        imgSrc: '/image/Te_3.png',
-        imgAlt: '도서'
+        title: '레그프레스',
+        location: '하체 전체적인 근육',
+        moreinfo: '하체 전체 근육의 기능 강화',
+        imgSrc: '/image/lower3.png',
+        imgAlt: '운동'
     },
     {
-        title: '여름을 한 입 베어 물었더니',
-        location: '청소년',
-        moreinfo: '이꽃님',
-        imgSrc: '/image/Te_4.png',
-        imgAlt: '도서'
+        title: '루마니안 데드리프트',
+        location: '하체 후면부',
+        moreinfo: '하체 후면부의 기능 강화',
+        imgSrc: '/image/lower4.png',
+        imgAlt: '운동'
     },
     {
-        title: '셰이커',
-        location: '청소년',
-        moreinfo: '이희영',
-        imgSrc: '/image/Te_5.png',
-        imgAlt: '도서'
+        title: '스쿼트',
+        location: '하체 전체 근육',
+        moreinfo: '하체 전체적인 기능 강화',
+        imgSrc: '/image/lower5.png',
+        imgAlt: '운동'
     },
     {
-        title: '세계를 건너 너에게 갈게',
-        location: '청소년',
-        moreinfo: '이꽃님',
-        imgSrc: '/image/Te_6.png',
+        title: '이너타이',
+        location: '허벅지 안쪽 근육',
+        moreinfo: '내전근 기능 강화',
+        imgSrc: '/image/lower6.png',
         imgAlt: '도서'
     }   
 ];

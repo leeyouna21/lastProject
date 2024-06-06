@@ -1,25 +1,28 @@
 import React, { useState, useEffect } from 'react';
-
 import Book_button from './Book_button';
 
 const Main = () => {
   const [activeTab, setActiveTab] = useState('Book');
   const images = ['./image/도서.png', './image/도서2.png', './image/도서3.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fadeIn, setFadeIn] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
+      setFadeIn(false);
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+        setFadeIn(true);
+      }, 500); // 이미지 페이드 아웃 시간과 맞추기
     }, 5000);
+
     return () => clearInterval(interval);
   }, [images.length]);
 
   const renderContent = () => {
     if (activeTab === 'Book') {
-      return <Book_button />;
-    } else if (activeTab === 'Book') {
       return <Book_button />;
     }
   };
@@ -29,7 +32,7 @@ const Main = () => {
       <div className="photocontainer">
         <div className="themephoto">
           <img
-            className='themephoto1'
+            className={`themephoto1 ${fadeIn ? 'fade-in' : ''}`}
             alt='photo'
             src={images[currentImageIndex]}
           />
@@ -57,19 +60,17 @@ const Main = () => {
         </div>
       </div>
       <div className="Trv_main">
-                <div className="Trv_container">
-                    <div className="try_title">
-                        <h4>도서 추천</h4>
-                    </div>
-                    <div className="content">
-                        {renderContent()}
-                    </div>
-                </div>
-            </div>
-      
-      
+        <div className="Trv_container">
+          <div className="try_title">
+            <h4>도서 추천</h4>
+          </div>
+          <div className="content">
+            {renderContent()}
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Main;

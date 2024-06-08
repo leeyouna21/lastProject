@@ -20,13 +20,13 @@ import MedicineItem from "./components/Medicine/MedicineItem.jsx";
 import FoodItem from "./components/Food/FoodItem.jsx";
 import Book from "./components/Book/Book.jsx";
 import BookItem from "./components/Book/BookItem.jsx";
-import Book_button from "./components/Book/Book_button.jsx";
+import Bookbutton from "./components/Book/Bookbutton.jsx";
 import Edu from "./components/Edu/Edu.jsx";
-import Edu_btn from "./components/Edu/Edu_btn.jsx";
+import Edubtn from "./components/Edu/Edubtn.jsx";
 import EduItem from "./components/Edu/EduItem.jsx";
 import Hobby from "./components/Hobby/Hobby.jsx";
-import Hobby_Item from "./components/Hobby/HobbyItem.jsx";
-import Hobby_btn from "./components/Hobby/Hobby_btn.jsx";
+import HobbyItem from "./components/Hobby/HobbyItem.jsx";
+import Hobbybtn from "./components/Hobby/Hobbybtn.jsx";
 
 function App() {
   return (
@@ -55,13 +55,13 @@ function App() {
             <Route path="/FoodItem" element={<FoodItem />} />
             <Route path="/Book" element={<Book />} />
             <Route path="/BookItem" element={<BookItem />} />
-            <Route path="/Book_button" element={<Book_button />} />
+            <Route path="/Bookbutton" element={<Bookbutton />} />
             <Route path="/Edu" element={<Edu />} />
             <Route path="/EduItem" element={<EduItem />} />
-            <Route path="/Edu_btn" element={<Edu_btn />} />
+            <Route path="/Edubtn" element={<Edubtn />} />
             <Route path="/Hobby" element={<Hobby />} />
-            <Route path="/Hobby_Item" element={<Hobby_Item />} />
-            <Route path="/Hobby_btn" element={<Hobby_btn />} />
+            <Route path="/HobbyItem" element={<HobbyItem />} />
+            <Route path="/Hobbybtn" element={<Hobbybtn />} />
           </Routes>
         </Router>
       </div>

@@ -4,11 +4,11 @@ import FoodItem from './FoodItem';
 import { RiverData, HeartData } from '../Food';
 
 const Food = () => {
-  const [category, setCategory] = useState('theme'); 
+const [category, setCategory] = useState('theme'); 
 
-  return (
+    return (
     <div>
-      <div className="FoodItem_page">
+        <div className="FoodItem_page">
         <div className="title_wrap">
             <div className="container">
                 <div className="theme_title">
@@ -53,7 +53,7 @@ const Food = () => {
         </div>
     </div>
 </div>
-  )
+)
 }
 
 export default Food

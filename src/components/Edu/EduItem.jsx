@@ -15,9 +15,13 @@ const EduItem = ({ title, desc, hashes, link }) => {
     <div className="location_wrap">
       <div className="location">
         <div className="tre_title">{title}</div>
-        <div className="tre_desc">{desc}</div>
+        <div className="tre_hash">
+        {hashes.map((hash, index) => (
+          <h6 key={index}>{hash}</h6>
+        ))}
       </div>
-      <div className="tre_hashes">{hashes}</div>
+      </div>
+      {/* <div className="tre_hashes">{hashes}</div> */}
       <div className="tre_img">
         <img src={thumbnail} alt={title} />
       </div>

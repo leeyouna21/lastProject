@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Exercise_btn from './Exercise_btn';
+import Exercisebtn from './Exercisebtn';
 
 const Main = () => {
   const [activeTab, setActiveTab] = useState('Exercise');

@@ -65,7 +65,7 @@
 // export default Login;
 
 import React, { useState, useContext } from 'react';
-import { signInWithGoogle } from '../../fbase';
+// import { signInWithGoogle } from '../../fbase';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../UserContext'; // UserContext 경로를 정확히 설정하세요
 
@@ -78,18 +78,18 @@ const Login = () => {
         setPasswordVisible(!passwordVisible);
     };
 
-    const handleGoogleLogin = () => {
-        signInWithGoogle()
-            .then((result) => {
-                // Handle the sign-in result
-                setUser(result.user);
-                navigate('/mainpg');
-            })
-            .catch((error) => {
-                // Handle errors here
-                console.error(error);
-            });
-    };
+    // const handleGoogleLogin = () => {
+    //     signInWithGoogle()
+    //         .then((result) => {
+    //             // Handle the sign-in result
+    //             setUser(result.user);
+    //             navigate('/mainpg');
+    //         })
+    //         .catch((error) => {
+    //             // Handle errors here
+    //             console.error(error);
+    //         });
+    // };
 
     return (
         <div className="wrap_login">
@@ -134,7 +134,7 @@ const Login = () => {
                             <p>  OR  </p>
                             <hr />
                         </div>
-                        <button className="google-login" onClick={handleGoogleLogin}>
+                        <button className="google-login" >
                             <div className="google_icon"></div>
                             <h5>구글 로그인</h5>
                         </button>

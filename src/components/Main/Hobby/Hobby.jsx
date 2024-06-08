@@ -24,6 +24,8 @@ const Main = () => {
   const renderContent = () => {
     if (activeTab === 'Hobby') {
       return <Hobby_btn />;
+    } else if (activeTab === 'Hobby') {
+      return <Hobby_btn />;
     }
   };
 

@@ -3,7 +3,7 @@ import HobbyItem from './HobbyItem';
 import { RidingData, FishingData } from '../Hobby';
 
 const Hobby_btn = () => {
-  const [category, setCategory] = useState('Ride');
+  const [category, setCategory] = useState('rest');
 
   return (
     <div>
@@ -15,7 +15,7 @@ const Hobby_btn = () => {
                 className={category === 'rest' ? 'active' : ''}
                 onClick={() => setCategory('rest')}
               >
-                잔잔한 취미
+                힐링
               </button>
               <button
                 className={category === 'activity' ? 'active' : ''}

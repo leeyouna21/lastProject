@@ -3,7 +3,7 @@ import ExerciseItem from './ExerciseItem';
 import { UpperData, LowerData } from '../Exercise'; 
 
 const Exercise_btn = () => {
-    const [category, setCategory] = useState('Exercise'); 
+    const [category, setCategory] = useState('upper'); 
 
   return (
     <div>

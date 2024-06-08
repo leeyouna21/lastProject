@@ -119,18 +119,19 @@ const MainPg = () => {
                         <Weather></Weather>
                     </div> */}
                     <div className="with_wrap">
-                        <img className='withlogo' src="/image/with_wrap.png" alt="" />
-                        <div className="wite_text">
-                            <a className='with' href="../With">
-                                <h4>혼자보단 둘, 둘 보단 셋, 셋 보단 모두 !</h4>
-                                <h1>모임해요</h1>
-                                <h4>
-                                모임 속에서 취미를 공유하고, 시간을 공유하며<br />
-                                자유로운 만남을 가질 수 있어요.
-                            </h4>
-                            </a>
+                        <div className="with">
+                            <img className='withlogo' src="/image/with_wrap.png" alt="" />
+                            <div className="wite_text">
+                                <a className='with' href="../With">
+                                    <h4>혼자보단 둘, 둘 보단 셋, 셋 보단 모두 !</h4>
+                                    <h1>모임해요</h1>
+                                    <h4>
+                                    모임 속에서 취미를 공유하고, 시간을 공유하며<br />
+                                    자유로운 만남을 가질 수 있어요.
+                                </h4>
+                                </a>
+                            </div>
                         </div>
-                        
                     </div>
                     <div className="Board_Preview_wrap">
                         <div className="BP_title">

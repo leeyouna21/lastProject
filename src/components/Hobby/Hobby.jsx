@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import Hobby_btn from './Hobby_btn';
 // import { UserContext } from '../../UserContext';
 
@@ -10,13 +9,19 @@ const Main = () => {
   const [activeTab, setActiveTab] = useState('Hobby');
   const images = ['./image/취미.png', './image/취미2.png', './image/취미3.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fadeIn, setFadeIn] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
+      setFadeIn(false);
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+        setFadeIn(true);
+      }, 500); // 이미지 페이드 아웃 시간과 맞추기
     }, 5000);
+
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -33,7 +38,7 @@ const Main = () => {
       <div className="photocontainer">
         <div className="themephoto">
           <img
-            className='themephoto1'
+            className={`themephoto1 ${fadeIn ? 'fade-in' : ''}`}
             alt='photo'
             src={images[currentImageIndex]}
           />
@@ -57,23 +62,21 @@ const Main = () => {
           />
         </div>
         <div className="themeinfobox">
-          <span>무료한 일상을 보내고 계신가요?<br /> 이곳에서 다양한 취미들을 찾고 도전 해보세요!</span >
+          <span>무료한 일상을 보내고 계신가요?<br /> 이곳에서 다양한 취미들을 찾고 도전 해보세요!</span>
         </div>
       </div>
       <div className="Trv_main">
-                <div className="Trv_container">
-                    <div className="try_title">
-                        <h4>취미 추천</h4>
-                    </div>
-                    <div className="content">
-                        {renderContent()}
-                    </div>
-                </div>
-            </div>
-      
-      
+        <div className="Trv_container">
+          <div className="try_title">
+            <h4>취미 추천</h4>
+          </div>
+          <div className="content">
+            {renderContent()}
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Main;

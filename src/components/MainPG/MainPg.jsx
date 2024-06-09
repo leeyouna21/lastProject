@@ -60,7 +60,7 @@ const MainPg = () => {
                 <div className="main_btm_container">
                     <div className="btm_left">
                         <Banner />
-                        <News /> {/* News 컴포넌트 포함 */}
+                        <News /> 
                     </div>
                     <div className="btm_right">
                         <div className="login_wrap">

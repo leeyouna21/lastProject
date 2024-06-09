@@ -13,9 +13,9 @@ const Main = () => {
 
   // 15초마다 이미지 변경
   const images = [
-    "/image/Travel_1.png",
-    "/image/Travel_2.png",
-    "/image/Travel_3.png"
+    "/image/교육.png",
+    "/image/교육2.png",
+    "/image/교육3.png"
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -55,7 +55,7 @@ const Main = () => {
             </a>
         </div>
         <div className="bottom_wrap">
-            <h3>도서</h3>
+            <h3>교육</h3>
             <div className="search_wrap">
                 <form action="">
                     <Input
@@ -64,7 +64,7 @@ const Main = () => {
                     />
                 </form>
             </div>
-            <h6>마음의 양식을 쌓고 싶을 땐,<br /> 이곳에서 고민하고 골라보세요.</h6>
+            <h6>다양한 교육을 한 번에<br />공부하고 더 성장한 나를 만나보세요.</h6>
         </div>
         </div>
         <div className="Trv_main">

@@ -12,9 +12,9 @@ const Main = () => {
 
   // 15초마다 이미지 변경
   const images = [
-    "/image/Travel_1.png",
-    "/image/Travel_2.png",
-    "/image/Travel_3.png"
+    "/image/도서.png",
+    "/image/도서2.png",
+    "/image/도서3.png"
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -36,7 +36,7 @@ const Main = () => {
 
   return (
     <div>
-      <div className="BOOK_MAIN">
+      <div className="BOOK">
         <div className="photocontainer">
           <div className="BG">
                   <div className="image-container">
@@ -64,7 +64,7 @@ const Main = () => {
                               />
                           </form>
                       </div>
-                      <h6>마음의 양식을 쌓고 싶을 땐,<br /> 이곳에서 고민하고 골라보세요.</h6>
+                      <h6>마음의 양식을 쌓고 싶을 땐, 시니어클럽에서 고민하고 골라보세요.<br /> 다양한 책들과 여러 종류의 카테고리를 통해 원하는 책을 찾을 수 있습니다.</h6>
                   </div>
           </div>
           <div className="Trv_main">

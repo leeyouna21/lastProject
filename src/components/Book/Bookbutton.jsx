@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import BookItem from './BookItem'; 
-import { RomanceData, TeenagerData } from '.';
+import { RomanceData, TeenagerData, SelfData, PoemData } from '.';
 
 const Book_button = () => {
   const [category, setCategory] = useState('Romance');
@@ -23,6 +23,18 @@ const Book_button = () => {
               >
                 청소년
               </button>
+              <button
+                className={category === 'SelfData' ? 'active' : ''}
+                onClick={() => setCategory('SelfData')}
+              >
+                자기계발
+              </button>
+              <button
+                className={category === 'PoemData' ? 'active' : ''}
+                onClick={() => setCategory('PoemData')}
+              >
+                시
+              </button>
             </div>
           </div>
           <div className="box_wrap">
@@ -44,6 +56,28 @@ const Book_button = () => {
                 moreinfo={item.moreinfo}
                 imgSrc={item.imgSrc}
                 imgAlt={item.imgAlt}
+              />
+            ))}
+            {category === 'SelfData' && SelfData.map((item, index) => (
+              <BookItem
+                key={index}
+                title={item.title}
+                location={item.location}
+                moreinfo={item.moreinfo}
+                imgSrc={item.imgSrc}
+                imgAlt={item.imgAlt}
+                link={item.link}
+              />
+            ))}
+            {category === 'PoemData' && PoemData.map((item, index) => (
+              <BookItem
+                key={index}
+                title={item.title}
+                location={item.location}
+                moreinfo={item.moreinfo}
+                imgSrc={item.imgSrc}
+                imgAlt={item.imgAlt}
+                link={item.link}
               />
             ))}
           </div>

@@ -6,7 +6,7 @@ const Exercise_btn = () => {
     const [category, setCategory] = useState('upper'); 
 
   return (
-    <div>
+    <div className='EXERSISE'>
       <div className="title_wrap">
         <div className="container">
         <div className="theme_title">

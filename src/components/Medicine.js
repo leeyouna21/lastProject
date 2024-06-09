@@ -62,7 +62,7 @@ export const VitaminAData = [
         imgSrc: '/image/Medi_9.png',
         imgAlt: 'Medicine'
     },
-    ];
+];
 export const VitaminBData = [
     {
         title: '스포츠 리서치 트리플 스트렝스 오메가3 피쉬오일',
@@ -127,4 +127,69 @@ export const VitaminBData = [
         imgSrc: '/image/Ome_9.png',
         imgAlt: 'Medicine'
     }
-    ];
+];
+export const calciumData = [
+    {
+        title: '종근당 칼슘 앤 마그네슘 비타민D 아연',
+        moreinfo: '근육&신경 안정, 면역 기능, 뼈 건강',
+        imgSrc: '/image/calcium_1.png',
+    },
+    {
+        title: '칼슘 마그네슘 말레이트 쏜리서치',
+        moreinfo: '긴장 완화, 수면질 개선, 뼈 건강',
+        imgSrc: '/image/calcium_2.png',
+    },
+    {
+        title: '나우푸드 칼슘 & 마그네슘',
+        moreinfo: '근육&신경 안정, 여성 갱년기',
+        imgSrc: '/image/calcium_3.png',
+    },
+    {
+        title: '뉴트리디데이 프리미엄 칼슘 마그네슘 아연 비타민D',
+        moreinfo: '치아 건강, 면역 기능, 여성 갱년기',
+        imgSrc: '/image/calcium_4.png',
+    },
+    {
+        title: '블루보넷 킬레이트 칼슘 마그네슘',
+        moreinfo: '생리전증후군 & 생리통개선, 치아 건강, 긴장 완화.',
+        imgSrc: '/image/calcium_5.png',
+    },
+    {
+        title: '네이처메이드 칼슘 마그네슘 아연 비타민D ',
+        moreinfo: '근육&신경 안정, 면역 기능, 뼈 건강',
+        imgSrc: '/image/calcium_6.png',
+    }
+];
+export const glucosamineData = [
+    {
+        title: '젠와이즈 조인트 서포트',
+        moreinfo: '관절 건강, 중성지방 합성 억제, 콜레스테롤 합성 조절',
+        imgSrc: '/image/glucosamine_1.png',
+    },
+    {
+        title: '닥터스베스트 글루코사민 콘드로이틴 MSM',
+        moreinfo: '관절 건강, 체액 농도 밸런스',
+        imgSrc: '/image/glucosamine_2.png',
+    },
+    {
+        title: '커클랜드 시그니처 글루코사민HCI',
+        moreinfo: '관절 건강, 중성지방 합성 억제',
+        imgSrc: '/image/glucosamine_3.png',
+    },
+    {
+        title: '솔가 글루코사민 히알루론산 콘드로이틴 MSM',
+        moreinfo: '콜레스테롤 합성 조절, 관절 건강',
+        imgSrc: '/image/glucosamine_4.png',
+    },
+    {
+        title: '종근당건강 글루코사민 플러스',
+        moreinfo: '관절 건강, 중성지방 합성 억제',
+        imgSrc: '/image/glucosamine_5.png',
+    },
+    {
+        title: '암웨이 조인트가드 글루코사민',
+        moreinfo: '관절 건강,콜레스테롤 합성 조절,중성지방 합성 억제',
+        imgSrc: '/image/glucosamine_6.png',
+    }
+];
+

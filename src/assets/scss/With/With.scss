@@ -1,0 +1,150 @@
+.With {
+    width: 100%;
+    height: auto;
+    background: #d8d8d8;
+    display: flex;
+
+    .with_left {
+        width: 15%;
+        height: auto;
+        background: #fff;
+
+        .left_container {
+            width: calc(100% - 30px);
+            margin: 0 auto;
+            .logo {
+                width: 100%;
+                height: 40px;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 258px;
+                    height: 2px;
+                    background: #e4e4e4;
+                    position: absolute;
+                    top: 40px;
+                    left: -15px;
+                }
+                h5 {
+                    text-align: center;
+                    margin-top: 15px;
+                    font-size: 18px;
+                    color: #888;
+                }
+            }
+            .chat_wrap {
+                width: 100%;
+                height: 900px;
+
+                h3 {
+                    color: #888;
+                    font-size: 18px;
+                    padding-top: 20px;
+                }
+
+                .with_box_wrap {
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 10px;
+                    background: #4E70EC;
+
+                    h3 {
+                        text-align: center;
+                        justify-content: center;
+                        display: flex;
+                        margin-top: 20px;
+                        padding-top: 15px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .user_name {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 258px;
+                    height: 2px;
+                    background: #e4e4e4;
+                    position: absolute;
+                    top: 0px;
+                    left: -15px;
+                }
+
+                h4 {
+                    font-size: 20px;
+                    color: #999;
+                    text-align: center;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+
+    .with_right {
+        width: 85%;
+        height: 1030px;
+        background: #F1F6FF;
+
+        .right_container {
+            width: calc(100% - 100px);
+            margin: 0 auto;
+            height: auto;
+
+            .chat_cont {
+                width: 100%;
+                height: 900px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                overflow-y: auto;
+
+                .YOU_right, .ME_left {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+
+                .YOU_right {
+                    justify-content: flex-start;
+                }
+
+                .ME_left {
+                    justify-content: flex-end;
+                }
+
+                .YOU, .ME {
+                    max-width: 60%;
+                    padding: 10px;
+                    border-radius: 10px;
+                    word-wrap: break-word;
+                }
+
+                .YOU {
+                    background: #4E70EC;
+                    color: #fff;
+                }
+
+                .ME {
+                    background: #fff;
+                    color: #000;
+                    border: 1px solid #ccc;
+                }
+            }
+
+            .text_wrap {
+                display: flex;
+                margin-top: 20px;
+
+                input {
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 10px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}

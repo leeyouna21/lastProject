@@ -13,9 +13,9 @@ const Main = () => {
 
   // 15초마다 이미지 변경
   const images = [
-    "/image/Travel_1.png",
-    "/image/Travel_2.png",
-    "/image/Travel_3.png"
+    "/image/취미.png",
+    "/image/취미2.png",
+    "/image/취미3.png"
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -65,7 +65,7 @@ const Main = () => {
                               />
                           </form>
                       </div>
-                      <h6>마음의 양식을 쌓고 싶을 땐,<br /> 이곳에서 고민하고 골라보세요.</h6>
+                      <h6>다양한 취미를 내 생활로 만들기<br /> 혼자가 아닌 여럿이하는 프로그램 가입해요</h6>
                   </div>
             </div>
             <div className="Trv_main">

@@ -127,4 +127,204 @@ export const RiverData = [
             imgSrc: '/image/Heart_9.png',
             imgAlt: '단양'
         }
-        ];
+    ];
+    export const SkinData = [
+        {
+            title: '올리브 오일',
+            moreinfo: '건강한 지방이 피부를 촉촉하게 유지해줍니다.',
+            imgSrc: '/image/Skin_1.png',
+            imgAlt: 'Olive Oil'
+        },
+        {
+            title: '석류',
+            moreinfo: '항산화 물질이 풍부해 피부를 보호합니다.',
+            imgSrc: '/image/Skin_2.png',
+            imgAlt: 'Pomegranate'
+        },
+        {
+            title: '파프리카',
+            moreinfo: '비타민 C가 풍부해 피부 탄력을 유지해줍니다.',
+            imgSrc: '/image/Skin_3.png',
+            imgAlt: 'Bell Pepper'
+        },
+        {
+            title: '호두',
+            moreinfo: '오메가-3 지방산과 항산화 물질이 피부 염증을 줄입니다.',
+            imgSrc: '/image/Skin_4.png',
+            imgAlt: 'Walnut'
+        },
+        {
+            title: '키위',
+            moreinfo: '비타민 C와 E가 풍부해 피부 탄력과 건강을 유지합니다.',
+            imgSrc: '/image/Skin_5.png',
+            imgAlt: 'Kiwi'
+        },
+        {
+            title: '씨앗류 (아마씨, 치아씨)',
+            moreinfo: '오메가-3 지방산과 섬유질이 피부 건강을 촉진합니다.',
+            imgSrc: '/image/Skin_6.png',
+            imgAlt: 'Seeds (Flax, Chia)'
+        },
+        {
+            title: '오이',
+            moreinfo: '높은 수분 함량과 비타민 K가 피부를 촉촉하게 유지합니다.',
+            imgSrc: '/image/Skin_7.png',
+            imgAlt: 'Cucumber'
+        },
+        {
+            title: '망고',
+            moreinfo: '비타민 A와 C가 풍부해 피부 재생과 콜라겐 생성을 돕습니다.',
+            imgSrc: '/image/Skin_8.png',
+            imgAlt: 'Mango'
+        },
+        {
+            title: '양배추',
+            moreinfo: '비타민 C와 K가 피부 건강과 염증 완화에 도움을 줍니다.',
+            imgSrc: '/image/Skin_9.png',
+            imgAlt: 'Cabbage'
+        },
+        {
+            title: '비트',
+            moreinfo: '항산화 물질이 풍부해 피부 해독과 혈류 개선에 도움을 줍니다.',
+            imgSrc: '/image/Skin_10.png',
+            imgAlt: 'Beetroot'
+        }
+    ];
+    export const KidneyData = [
+
+        {
+            title: ' 크랜베리',
+            moreinfo: '항산화 물질이 풍부해 신장 건강을 보호합니다.',
+            imgSrc: '/image/Kidney_1.png',
+            imgAlt: 'Berries'
+        },
+        {
+            title: '사과',
+            moreinfo: '섬유질이 풍부해 신장 기능을 도와줍니다.',
+            imgSrc: '/image/Kidney_2.png',
+            imgAlt: 'Apple'
+        },
+        {
+            title: '피망',
+            moreinfo: '비타민 C와 항산화 물질이 풍부해 신장 건강을 증진시킵니다.',
+            imgSrc: '/image/Kidney_3.png',
+            imgAlt: 'Bell Pepper'
+        },
+        {
+            title: '콜리플라워',
+            moreinfo: '비타민 C, K, B가 풍부해 신장 기능을 돕습니다.',
+            imgSrc: '/image/Kidney_4.png',
+            imgAlt: 'Cauliflower'
+        },
+        {
+            title: '마늘',
+            moreinfo: '항염증 특성이 있어 신장 건강에 좋습니다.',
+            imgSrc: '/image/Kidney_5.png',
+            imgAlt: 'Garlic'
+        },
+        {
+            title: '양파',
+            moreinfo: '항산화 물질이 풍부해 신장 건강을 보호합니다.',
+            imgSrc: '/image/Kidney_6.png',
+            imgAlt: 'Onion'
+        },
+        {
+            title: '파인애플',
+            moreinfo: '신장 건강에 좋은 저칼륨 과일입니다.',
+            imgSrc: '/image/Kidney_7.png',
+            imgAlt: 'Pineapple'
+        },
+        {
+            title: '레몬',
+            moreinfo: '구연산이 풍부해 신장 결석 예방에 도움을 줍니다.',
+            imgSrc: '/image/Kidney_8.png',
+            imgAlt: 'Lemon'
+        },
+        {
+            title: '생강',
+            moreinfo: '항염증 효과가 있어 신장 건강에 좋습니다.',
+            imgSrc: '/image/Kidney_9.png',
+            imgAlt: 'Ginger'
+        },
+        {
+            title: '단호박',
+            moreinfo: '베타카로틴과 섬유질이 풍부해 신장 건강을 증진시킵니다.',
+            imgSrc: '/image/Kidney_10.png',
+            imgAlt: 'Pumpkin'
+        },
+        {
+            title: '케일',
+            moreinfo: '비타민 K와 항산화 물질이 풍부해 신장 건강에 좋습니다.',
+            imgSrc: '/image/Kidney_11.png',
+            imgAlt: 'Kale'
+        },
+        {
+            title: '체리',
+            moreinfo: '항산화 물질이 풍부해 신장 건강을 보호합니다.',
+            imgSrc: '/image/Kidney_12.png',
+            imgAlt: 'Cherry'
+        }
+    ];
+    export const RenalData = [
+
+        {
+            title: '고구마',
+            moreinfo: '칼륨과 비타민이 풍부해 콩팥 건강을 지원합니다.',
+            imgSrc: '/image/Renal_1.png',
+            imgAlt: 'Sweet Potato'
+        },
+        {
+            title: '호박씨',
+            moreinfo: '마그네슘이 풍부해 콩팥 건강에 좋습니다.',
+            imgSrc: '/image/Renal_2.png',
+            imgAlt: 'Pumpkin Seeds'
+        },
+        {
+            title: '브로콜리',
+            moreinfo: '항산화 물질과 비타민 C가 풍부해 콩팥 건강을 증진시킵니다.',
+            imgSrc: '/image/Renal_3.png',
+            imgAlt: 'Broccoli'
+        },
+        {
+            title: '적양배추',
+            moreinfo: '항산화 물질이 풍부해 콩팥 건강을 보호합니다.',
+            imgSrc: '/image/Renal_4.png',
+            imgAlt: 'Red Cabbage'
+        },
+        {
+            title: '무',
+            moreinfo: '저칼륨 식품으로 콩팥 건강에 좋습니다.',
+            imgSrc: '/image/Renal_5.png',
+            imgAlt: 'Radish'
+        },
+        {
+            title: '피스타치오',
+            moreinfo: '건강한 지방과 섬유질이 풍부해 콩팥 건강에 좋습니다.',
+            imgSrc: '/image/Renal_6.png',
+            imgAlt: 'Pistachio'
+        },
+        {
+            title: '귤',
+            moreinfo: '비타민 C가 풍부해 콩팥 건강을 증진시킵니다.',
+            imgSrc: '/image/Renal_7.png',
+            imgAlt: 'Mandarin Orange'
+        },
+        {
+            title: '흰 살 생선',
+            moreinfo: '저칼륨 단백질로 콩팥 건강에 좋습니다.',
+            imgSrc: '/image/Renal_8.png',
+            imgAlt: 'White Fish'
+        },
+        {
+            title: '레드자몽',
+            moreinfo: '항산화 물질이 풍부해 콩팥 건강에 좋습니다.',
+            imgSrc: '/image/Renal_9.png',
+            imgAlt: 'Red Grapefruit'
+        },
+        {
+            title: '렌틸콩',
+            moreinfo: '단백질과 섬유질이 풍부해 콩팥 건강에 좋습니다.',
+            imgSrc: '/image/Renal_10.png',
+            imgAlt: 'Lentils'
+        }
+    ];

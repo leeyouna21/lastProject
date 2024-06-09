@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BookItem = ({ title, location, moreinfo, imgSrc, imgAlt }) => {
+const BookItem = ({ title, location, moreinfo, imgSrc, imgAlt, link }) => {
   return (
     <div className="location_wrap">
       <div className="location">
@@ -9,10 +9,7 @@ const BookItem = ({ title, location, moreinfo, imgSrc, imgAlt }) => {
       </div>
       <div className="tre_desc">{moreinfo}</div>
       <img className="tre_img" src={imgSrc} alt={imgAlt} />
-      <div className="booking">
-        <h5>자세히 알아보기</h5>
-        <link rel="stylesheet" href="https://hotels.naver.com/" />
-      </div>
+      <a href={link} className="link">책 구매하기</a>
     </div>
   );
 };

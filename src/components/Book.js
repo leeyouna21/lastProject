@@ -1,5 +1,26 @@
 export const RomanceData = [
     {
+        title: '강산미인모',
+        location: '로맨스',
+        moreinfo: '수당',
+        imgSrc: '/image/Ro_11.png',
+        imgAlt: '도서'
+    },
+    {
+        title: '키메라',
+        location: '로맨스',
+        moreinfo: '홍수연',
+        imgSrc: '/image/Ro_14.png',
+        imgAlt: '도서'
+    },
+    {
+        title: '여름방학 : 너를 좋아한 계절',
+        location: '로맨스',
+        moreinfo: '김빵',
+        imgSrc: '/image/Ro_5.png',
+        imgAlt: '도서'
+    },
+    {
         title: '찬란한 이혼',
         location: '로맨스',
         moreinfo: '알렛',
@@ -27,13 +48,7 @@ export const RomanceData = [
         imgSrc: '/image/Ro_4.png',
         imgAlt: '도서'
     },
-    {
-        title: '여름방학 : 너를 좋아한 계절',
-        location: '로맨스',
-        moreinfo: '김빵',
-        imgSrc: '/image/Ro_5.png',
-        imgAlt: '도서'
-    },
+    
     {
         title: '현란한 그랑 센',
         location: '로맨스',
@@ -70,13 +85,6 @@ export const RomanceData = [
         imgAlt: '도서'
     },
     {
-        title: '강산미인모',
-        location: '로맨스',
-        moreinfo: '수당',
-        imgSrc: '/image/Ro_11.png',
-        imgAlt: '도서'
-    },
-    {
         title: '경성탐정사무소',
         location: '로맨스',
         moreinfo: '박하민',
@@ -88,13 +96,6 @@ export const RomanceData = [
         location: '로맨스',
         moreinfo: '청어람',
         imgSrc: '/image/Ro_13.png',
-        imgAlt: '도서'
-    },
-    {
-        title: '키메라',
-        location: '로맨스',
-        moreinfo: '홍수연',
-        imgSrc: '/image/Ro_14.png',
         imgAlt: '도서'
     }
 ];

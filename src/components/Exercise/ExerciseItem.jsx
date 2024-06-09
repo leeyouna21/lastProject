@@ -2,7 +2,6 @@ import React from 'react';
 
 const ExerciseItem = ({ title, location, moreinfo, imgSrc, imgAlt }) => {
   return (
-    <div className="medicine-page">
       <div className="location_wrap">
         <div className="location">
           <div className="tre_title">{title}</div>
@@ -16,7 +15,6 @@ const ExerciseItem = ({ title, location, moreinfo, imgSrc, imgAlt }) => {
           <h5>운동 더 알아보기</h5>
         </div>
       </div>
-    </div>
   );
 };
 

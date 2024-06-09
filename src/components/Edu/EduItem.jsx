@@ -16,18 +16,20 @@ const EduItem = ({ title, desc, hashes, link }) => {
       <div className="location">
         <div className="tre_title">{title}</div>
         <div className="tre_hash">
-        {hashes.map((hash, index) => (
-          <h6 key={index}>{hash}</h6>
-        ))}
+          {hashes.map((hash, index) => (
+            <h6 key={index}>{hash}</h6>
+          ))}
+        </div>
       </div>
-      </div>
-      {/* <div className="tre_hashes">{hashes}</div> */}
       <div className="tre_img">
-        <img src={thumbnail} alt={title} />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img src={thumbnail} alt={title} />
+        </a>
       </div>
-      <div className="tre_link">
+      <div className="tre_link">이미지 클릭 시 페이지로 이동합니다.</div>
+      {/* <div className="tre_link">
         <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
-      </div>
+      </div> */}
     </div>
   );
 };

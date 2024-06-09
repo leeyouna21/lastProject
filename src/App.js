@@ -27,6 +27,9 @@ import EduItem from "./components/Edu/EduItem.jsx";
 import Hobby from "./components/Hobby/Hobby.jsx";
 import HobbyItem from "./components/Hobby/HobbyItem.jsx";
 import Hobbybtn from "./components/Hobby/Hobbybtn.jsx";
+import Exercise from "./components/Exercise/Exercise.jsx";
+import Exercisebtn from "./components/Exercise/Exercisebtn.jsx";
+import ExerciseItem from "./components/Exercise/ExerciseItem.jsx";
 
 function App() {
   return (
@@ -62,6 +65,9 @@ function App() {
             <Route path="/Hobby" element={<Hobby />} />
             <Route path="/HobbyItem" element={<HobbyItem />} />
             <Route path="/Hobbybtn" element={<Hobbybtn />} />
+            <Route path="/Exercise" element={<Exercise />} />
+            <Route path="/Exercisebtn" element={<Exercisebtn />} />
+            <Route path="/ExerciseItem" element={<ExerciseItem />} />
           </Routes>
         </Router>
       </div>

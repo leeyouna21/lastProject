@@ -3,7 +3,7 @@ export const UpperData = [
         title: '벤치 프레스',
         location: '가슴 근육',
         moreinfo: '가슴 근육 및 다양한 협응근을 길러주는 운동',
-        imgSrc: '/image/health.png',
+        imgSrc: '/image/health1.png',
         imgAlt: '운동'
     },
     {

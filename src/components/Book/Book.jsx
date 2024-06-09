@@ -36,38 +36,38 @@ const Main = () => {
 
   return (
     <div>
-      <div className="photocontainer">
-        <div className="BG">
-                <div className="image-container">
-                    {images.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`Travel ${index + 1}`}
-                            className={index === currentImageIndex ? 'visible' : ''}
-                        />
-                    ))}
-                </div>
-                <div className="header_wrap">
-                    <a href="../MainPG">
-                        <h4>Senior club</h4>
-                    </a>
-                </div>
-                <div className="bottom_wrap">
-                    <h3>도서</h3>
-                    <div className="search_wrap">
-                        <form action="">
-                            <Input
-                                type="text"
-                                placeholder="원하시는 검색을 입력해주세요."
-                            />
-                        </form>
-                    </div>
-                    <h6>마음의 양식을 쌓고 싶을 땐,<br /> 이곳에서 고민하고 골라보세요.</h6>
-                </div>
-        </div>
-      </div>
-      <div className="Trv_main">
+      <div className="BOOK_MAIN">
+        <div className="photocontainer">
+          <div className="BG">
+                  <div className="image-container">
+                      {images.map((image, index) => (
+                          <img
+                              key={index}
+                              src={image}
+                              alt={`Travel ${index + 1}`}
+                              className={index === currentImageIndex ? 'visible' : ''}
+                          />
+                      ))}
+                  </div>
+                  <div className="header_wrap">
+                      <a href="../MainPG">
+                          <h4>Senior club</h4>
+                      </a>
+                  </div>
+                  <div className="bottom_wrap">
+                      <h3>도서</h3>
+                      <div className="search_wrap">
+                          <form action="">
+                              <Input
+                                  type="text"
+                                  placeholder="원하시는 검색을 입력해주세요."
+                              />
+                          </form>
+                      </div>
+                      <h6>마음의 양식을 쌓고 싶을 땐,<br /> 이곳에서 고민하고 골라보세요.</h6>
+                  </div>
+          </div>
+          <div className="Trv_main">
         <div className="Trv_container">
           <div className="try_title">
             <h4>도서 추천</h4>
@@ -77,6 +77,9 @@ const Main = () => {
           </div>
         </div>
       </div>
+        </div>
+      
+    </div>
     </div>
   );
 };

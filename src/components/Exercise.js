@@ -40,6 +40,104 @@ export const UpperData = [
         moreinfo: '복근 및 코어를 키워주는 운동',
         imgSrc: '/image/health6.png',
         imgAlt: '운동'
+    },
+    {
+        title: '푸쉬업',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
+    },
+    {
+        title: '',
+        location: '',
+        moreinfo: '',
+        imgSrc: '/image/health1.png',
+        imgAlt: '운동'
     }
 ];
 export const LowerData = [
